@@ -1,0 +1,32 @@
+.hosted-by {
+  margin-bottom: 11px;
+  font-size: 28px;
+  line-height: 33px;
+}
+
+.host-address {
+  margin-bottom: 7px;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.host-desc {
+  margin-bottom: 25px;
+}
+
+.contact-host__btn {
+  @extend %link;
+  @extend %secondary-border-radius;
+  display: block;
+  width: 150px;
+  margin-bottom: 15px;
+  padding: 14px 24px 12px 27px;
+  color: $secondary-accent-color;
+  line-height: 22px;
+  border: 1px solid $secondary-accent-color;
+
+  &:hover {
+    background-color: $secondary-accent-color;
+    color: $main-light-color;
+  }
+}

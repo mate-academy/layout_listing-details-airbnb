@@ -1,14 +1,342 @@
-h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400; }
+ul, .main-nav__list, .apartment__card .main-params__list, .apartment__card .amenities__list, p, body {
+  margin: 0; }
+
+ul, .main-nav__list, .apartment__card .main-params__list, .apartment__card .amenities__list {
+  list-style: none;
+  padding: 0; }
+
+.form-order__container, .order-date, .order-guests {
+  border: 1px solid #e1e7ed;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 3px; }
+
+.contact-host__btn, .book {
+  border-radius: 4px; }
+
+.main-nav__list .list__item:not(:last-child) .list__item-link, .apartment__card .contact-host, .apartment__card .all-amenities, .contact-host__btn, .footer__list a {
+  color: #3d4e61;
+  font-family: Avenir-Heavy, sans-serif;
+  text-decoration: none;
+  -webkit-transition: 0.5s;
+  transition: 0.5s; }
 
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal; }
+  font-family: "Avenir-Book";
+  src: url("../fonts/Avenir-Book.ttf"), url("../fonts/Avenir-Book.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Avenir-Black";
+  src: url("../fonts/Avenir-Black.ttf"), url("../fonts/Avenir-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Avenir-BlackOblique";
+  src: url("../fonts/Avenir-BlackOblique.ttf"), url("../fonts/Avenir-BlackOblique.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Avenir-BookOblique";
+  src: url("../fonts/Avenir-BookOblique.ttf"), url("../fonts/Avenir-BookOblique.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: url("../fonts/Avenir-Heavy.ttf"), url("../fonts/Avenir-Heavy.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Avenir-HeavyOblique";
+  src: url("../fonts/Avenir-HeavyOblique.ttf"), url("../fonts/Avenir-HeavyOblique.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Avenir-Light";
+  src: url("../fonts/Avenir-Light.ttf"), url("../fonts/Avenir-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Avenir-LightOblique";
+  src: url("../fonts/Avenir-LightOblique.ttf"), url("../fonts/Avenir-LightOblique.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Avenir-Medium";
+  src: url("../fonts/Avenir-Medium.ttf"), url("../fonts/Avenir-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Avenir-MediumOblique";
+  src: url("../fonts/Avenir-MediumOblique.ttf"), url("../fonts/Avenir-MediumOblique.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Avenir-Oblique";
+  src: url("../fonts/Avenir-Oblique.ttf"), url("../fonts/Avenir-Oblique.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+@font-face {
+  font-family: "Avenir-Roman";
+  src: url("../fonts/Avenir-Roman.ttf"), url("../fonts/Avenir-Roman.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+
+h1,
+h2,
+h3,
+h4 {
+  margin-top: 0;
+  font-family: Avenir-Heavy, sans-serif; }
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
 
 body {
-  background: #eee; }
+  color: #3d4e61;
+  font-family: Avenir-Book, sans-serif;
+  font-size: 16px;
+  line-height: 19px; }
+
+.header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 20px 0 25px;
+  height: 60px; }
+
+.main-nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .main-nav__list .list__item:not(:last-child) {
+    margin-right: 30px; }
+    .main-nav__list .list__item:not(:last-child) .list__item-link:hover {
+      color: #fd5c63; }
+
+.banners__item {
+  height: 464px;
+  overflow: hidden; }
+  .banners__item .banners__image {
+    width: 100%;
+    height: 464px; }
+
+.content-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 18.75%;
+  padding: 39px 0 60px; }
+
+@media (min-width: 2000px) {
+  .content-container {
+    margin: 0 27.5%; } }
+
+.apartment__card {
+  width: 491px; }
+  .apartment__card__title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 10px; }
+  .apartment__card .short-desc {
+    color: #687c94;
+    margin-bottom: 15px; }
+  .apartment__card .main-params__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-bottom: 28px; }
+    .apartment__card .main-params__list-item:not(:last-child) {
+      margin-right: 30px; }
+  .apartment__card .full-desc {
+    height: 120px;
+    margin-bottom: 5px;
+    line-height: 24px; }
+  .apartment__card .contact-host {
+    display: block;
+    margin-bottom: 44px; }
+  .apartment__card .amenities__title {
+    font-family: Avenir-Heavy, sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 21px; }
+  .apartment__card .amenities__list {
+    display: grid;
+    grid-template-columns: 176px 176px;
+    grid-gap: 20px 13px;
+    margin-bottom: 13px;
+    font-family: Avenir-Book, sans-serif; }
+  .apartment__card .all-amenities {
+    display: block;
+    margin-bottom: 66px; }
+    .apartment__card .all-amenities:hover {
+      color: #fd5c63; }
+
+.reviews__title {
+  font-size: 28px;
+  line-height: 33px;
+  margin-bottom: 34px; }
+
+.reviews__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 15px; }
+
+.reviews__list-item .reviwer__name {
+  margin-bottom: 2px;
+  padding-left: 71px;
+  font-family: Avenir-Heavy, sans-serif;
+  font-size: 20px;
+  line-height: 27px;
+  position: relative; }
+
+.reviews__list-item .reviwer__name::before {
+  display: block;
+  content: "";
+  width: 50px;
+  height: 50px;
+  background-image: url(..//../images/Ellipse.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  left: 0; }
+
+.reviews__list-item .review__date {
+  margin-bottom: 14px;
+  padding-left: 71px;
+  font-size: 14px;
+  line-height: 16px; }
+
+.reviews__list-item .review-text {
+  height: 120px; }
+
+.hosted-by {
+  margin-bottom: 11px;
+  font-size: 28px;
+  line-height: 33px; }
+
+.host-address {
+  margin-bottom: 7px;
+  font-size: 14px;
+  line-height: 16px; }
+
+.host-desc {
+  margin-bottom: 25px; }
+
+.contact-host__btn {
+  display: block;
+  width: 150px;
+  margin-bottom: 15px;
+  padding: 14px 24px 12px 27px;
+  color: #118488;
+  line-height: 22px;
+  border: 1px solid #118488; }
+  .contact-host__btn:hover {
+    background-color: #118488;
+    color: #fff; }
+
+.form-order__container {
+  width: 330px;
+  height: 319px;
+  padding: 30px 30px 38px; }
+
+.order-price {
+  margin-bottom: 39px;
+  font-size: 16px;
+  line-height: 19px; }
+
+.form__input {
+  width: 270px;
+  height: 50px;
+  font-size: 16px;
+  line-height: 19px;
+  outline-color: #fd5c63; }
+
+.form__input::-webkit-input-placeholder {
+  color: #3d4e61; }
+
+.form__input::-moz-placeholder {
+  color: #3d4e61; }
+
+.form__input:-ms-input-placeholder {
+  color: #3d4e61; }
+
+.form__input::-ms-input-placeholder {
+  color: #3d4e61; }
+
+.form__input::placeholder {
+  color: #3d4e61; }
+
+.order-date {
+  margin-bottom: 16px;
+  text-indent: 17px; }
+
+.order-guests {
+  margin-bottom: 24px;
+  text-indent: 17px; }
+
+.book {
+  border: 1px solid transparent;
+  color: #fff;
+  background-color: #fd5c63;
+  cursor: pointer; }
+  .book:hover {
+    background-color: #fff;
+    border-color: #fd5c63;
+    color: #fd5c63; }
+
+.footer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  padding: 44px 18.75%;
+  -webkit-box-shadow: 0 -1px 0 #e1e7ed;
+          box-shadow: 0 -1px 0 #e1e7ed; }
+
+@media (min-width: 2000px) {
+  .footer {
+    padding: 44px 27.5%; } }
+
+.footer-title {
+  font-family: Avenir-Heavy, sans-serif;
+  margin-bottom: 20px; }
+
+.footer__list li:not(:last-child) {
+  margin-bottom: 9px; }
+
+.footer__list a {
+  color: #3d4e61;
+  font-family: Avenir-Book, sans-serif; }
+
+.footer__list a:hover {
+  color: #fd5c63; }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,74 @@
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 18.75%;
+  padding: 39px 0 60px;
+}
+
+@media (min-width: 2000px) {
+  .content-container {
+    margin: 0 27.5%;
+  }
+}
+
+.apartment__card {
+  width: 491px;
+  &__title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-bottom: 10px;
+  }
+
+  .short-desc {
+    color: $secondary-text-color;
+    margin-bottom: 15px;
+  }
+
+  .main-params__list {
+    @extend %list;
+    display: flex;
+    margin-bottom: 28px;
+
+    &-item:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+
+  .full-desc {
+    height: 120px;
+    margin-bottom: 5px;
+    line-height: 24px;
+  }
+
+  .contact-host {
+    @extend %link;
+    display: block;
+    margin-bottom: 44px;
+  }
+
+  .amenities__title {
+    font-family: Avenir-Heavy, sans-serif;
+    font-size: 20px;
+    line-height: 23px;
+    margin-bottom: 21px;
+  }
+
+  .amenities__list {
+    @extend %list;
+    display: grid;
+    grid-template-columns: 176px 176px;
+    grid-gap: 20px 13px;
+    margin-bottom: 13px;
+    font-family: Avenir-Book, sans-serif;
+  }
+
+  .all-amenities {
+    @extend %link;
+    display: block;
+    margin-bottom: 66px;
+
+    &:hover {
+      color: $main-accent-color;
+    }
+  }
+}

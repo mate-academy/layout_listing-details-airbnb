@@ -1,6 +1,83 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-  font-weight: normal;
+  font-family: "Avenir-Book";
+  src: url("../fonts/Avenir-Book.ttf"), url("../fonts/Avenir-Book.ttf") format("truetype");
   font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Avenir-Black";
+  src: url("../fonts/Avenir-Black.ttf"), url("../fonts/Avenir-Black.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Avenir-BlackOblique";
+  src: url("../fonts/Avenir-BlackOblique.ttf"), url("../fonts/Avenir-BlackOblique.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Avenir-BookOblique";
+  src: url("../fonts/Avenir-BookOblique.ttf"), url("../fonts/Avenir-BookOblique.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: url("../fonts/Avenir-Heavy.ttf"), url("../fonts/Avenir-Heavy.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Avenir-HeavyOblique";
+  src: url("../fonts/Avenir-HeavyOblique.ttf"), url("../fonts/Avenir-HeavyOblique.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Avenir-Light";
+  src: url("../fonts/Avenir-Light.ttf"), url("../fonts/Avenir-Light.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Avenir-LightOblique";
+  src: url("../fonts/Avenir-LightOblique.ttf"), url("../fonts/Avenir-LightOblique.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Avenir-Medium";
+  src: url("../fonts/Avenir-Medium.ttf"), url("../fonts/Avenir-Medium.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Avenir-MediumOblique";
+  src: url("../fonts/Avenir-MediumOblique.ttf"), url("../fonts/Avenir-MediumOblique.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Avenir-Oblique";
+  src: url("../fonts/Avenir-Oblique.ttf"), url("../fonts/Avenir-Oblique.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Avenir-Roman";
+  src: url("../fonts/Avenir-Roman.ttf"), url("../fonts/Avenir-Roman.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal;
 }
