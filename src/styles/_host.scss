@@ -1,0 +1,35 @@
+.host {
+  margin-bottom: 75px;
+
+  &__heading {
+    font-size: 28px;
+    margin-bottom: 11px;
+  }
+
+  &__city {
+    font-size: 14px;
+    color: #687c94;
+    font-weight: 300;
+    margin-bottom: 15px;
+  }
+
+  &__text {
+    margin-bottom: 20px;
+  }
+
+  &__contact-button {
+    width: 150px;
+    height: 50px;
+    font-weight: 600;
+    color: #118488;
+    border: 1px solid #118488;
+    box-sizing: border-box;
+    border-radius: 4px;
+    background-color: #fff;
+
+    &:hover {
+      color: #fff;
+      background-color: #118488;
+    }
+  }
+}

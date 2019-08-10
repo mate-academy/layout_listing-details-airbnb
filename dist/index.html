@@ -2,12 +2,118 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate academy</h1>
+    <header class="header">
+      <a href="#">
+        <img src="images/header-logo.svg" alt="AirBnB logo" class="header__logo">
+      </a>
+      <nav class="nav">
+        <a href="#" class="nav__links">Become a host</a>
+        <a href="#" class="nav__links">Trips</a>
+        <a href="#" class="nav__links">Messages</a>
+        <a href="#" class="profile-photo">
+          <img src="images/profile-photo.png" alt="profile photo" class="profile-foto__image">
+        </a>
+      </nav>
+    </header>
+    <main class="main">
+      <img src="images/photo-of-the-house.png" alt="photo of the house" class="main__house-photo">
+      <div class="main__content-wraper">
+        <div class="content">
+          <div class="lodging">
+            <h2 class="lodging__heading">Quiet appartment</h2>
+            <h5 class="lodging__type">Entire appartment</h5>
+            <ul class="lodging__main-details">
+              <li>4 guests</li>
+              <li>1 bedroom</li>
+              <li>1 bath</li>
+            </ul>
+            <p class="lodging__description">City Apartment is newly renovated in the heart of Budapest, right in the city center.
+               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
+               ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+            </p>
+            <a href="#" class="lodging__contact-host">Contact host</a>
+            <div class="amenities">
+              <h4 class="amenities__heading">Amenities</h4>
+              <span class="amenities__item">Elevator</span>
+              <span class="amenities__item">Hair dryer</span>
+              <span class="amenities__item">Washer</span>
+              <span class="amenities__item">Kitchen</span>
+              <span class="amenities__more-items">Show all amenities</span>
+            </div>
+          </div>
+          <div class="reviews">
+            <h3 class="reviews__heading">Reviews</h3>
+            <div class="review">
+              <a href="#" class="">
+                <img src="images/profile-photo1.jpg" alt="profile photo" class="review__profile-photo">
+              </a>
+              <div class="review__name-and-time">
+                <span class="review__name">John</span>
+                <span class="review__time">September 2016</span>
+              </div>
+              <p class="review__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+              </p>
+            </div>
+
+            <div class="review">
+              <a href="#" class="">
+                <img src="images/profile-photo1.jpg" alt="profile photo" class="review__profile-photo">
+              </a>
+              <div class="review__name-and-time">
+                <span class="review__name">John</span>
+                <span class="review__time">September 2016</span>
+              </div>
+              <p class="review__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                Ut enim ad minim veniam.
+              </p>
+            </div>
+          </div>
+          <div class="host">
+            <h3 class="host__heading">Hosted by Jane</h3>
+            <h5 class="host__city">Budapest, Hungary</h5>
+            <p class="host__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et magna aliqua.
+            </p>
+            <button type="button" class="host__contact-button">Contact host</button>
+          </div>
+
+          <div class="order-block">
+            <h5 class="order-block__heading">25$ per night</h5>
+            <input type="text" class="order-block__date" placeholder="Date" required>
+            <input type="text" class="order-block__guests" placeholder="Guests" required>
+            <button class="order-block__button">Book</button>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="footer__wraper">
+        <ul class="footer__list footer__list-left-side">
+          <li class="footer__list-item">Airbnb</li>
+          <li class="footer__list-item">About</li>
+          <li class="footer__list-item">Press</li>
+          <li class="footer__list-item">Help</li>
+        </ul>
+        <ul class="footer__list footer__list-central">
+          <li class="footer__list-item">Discover</li>
+          <li class="footer__list-item">Travel credit</li>
+          <li class="footer__list-item">Business</li>
+          <li class="footer__list-item">Guidebooks</li>
+        </ul>
+        <ul class="footer__list footer__list-right-side">
+          <li class="footer__list-item">Hosting</li>
+          <li class="footer__list-item">Why host</li>
+          <li class="footer__list-item">Hospitality</li>
+          <li class="footer__list-item">Community</li>
+        </ul>
+      <div>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

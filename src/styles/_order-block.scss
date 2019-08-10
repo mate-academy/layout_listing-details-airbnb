@@ -1,0 +1,55 @@
+.order-block {
+  width: 330px;
+  height: 321px;
+  background: #fff;
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  border-radius: 3px;
+  padding: 30px 30px 40px;
+  grid-column: 2;
+  grid-row: 1/4;
+
+  &__heading {
+    font-size: 16px;
+    font-weight: normal;
+    color: #3d4e61;
+    margin: 0 0 40px;
+  }
+
+  &__date,
+  &__guests {
+    width: 268px;
+    height: 50px;
+    border: 1px solid #e1e7ed;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding-left: 17px;
+
+    &::placeholder {
+      color: #3d4e61;
+    }
+  }
+
+  &__date {
+    margin-bottom: 15px;
+  }
+
+  &__guests {
+    margin-bottom: 25px;
+  }
+
+  &__button {
+    width: 268px;
+    height: 50px;
+    background: #fd5c63;
+    color: #fff;
+    border-radius: 4px;
+    border: none;
+    box-sizing: border-box;
+    cursor: pointer;
+
+    &:hover {
+      opacity: 0.9;
+    }
+  }
+}
