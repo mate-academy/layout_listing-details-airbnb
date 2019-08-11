@@ -1,8 +1,10 @@
 .content-container {
   display: flex;
   justify-content: space-between;
-  margin: 0 18.75%;
-  padding: 39px 0 60px;
+  flex-flow: row wrap;
+  width: 900px;
+  margin: 0 auto;
+  padding: 40px 0 60px;
 }
 
 @media (min-width: 2000px) {
