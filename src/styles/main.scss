@@ -18,7 +18,7 @@ body {
     display: block;
     width: 30px;
     height: 30px;
-    background-image: url(./../img/rectangle.png);
+    background-image: url(./../images/rectangle.png);
     margin: 15px 0 15px 26px;
     transition: transform 0.5s;
 
@@ -70,11 +70,13 @@ body {
   &__container-card {
     width: 500px;
   }
+
   &__main-heading {
     font-size: 36px;
     line-height: 42px;
     color: #3d4e61;
   }
+
   &__main-heading-span {
     font-size: 16px;
     line-height: 19px;
