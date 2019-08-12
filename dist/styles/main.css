@@ -1,13 +1,10 @@
-@charset "UTF-8";
 @font-face {
-  font-family: Avenir;
-  /* Имя шрифта */
-  src: url(../fonts/Avenir-Book.ttf);
-  /* Путь к файлу со шрифтом */ }
+  font-family: Avenir, sans-serif;
+  src: url(./fonts/Avenir-Book.ttf); }
 
 body {
   margin: 0;
-  font-family: Avenir; }
+  font-family: Avenir, sans-serif; }
 
 .top {
   height: 60px;
@@ -17,25 +14,25 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  -webkit-box-shadow: 0px 1px 0px #E1E7ED;
-          box-shadow: 0px 1px 0px #E1E7ED; }
+  -webkit-box-shadow: 0 1px 0 #e1e7ed;
+          box-shadow: 0 1px 0 #e1e7ed; }
   .top__logo {
     display: block;
     width: 30px;
     height: 30px;
-    background: url(../img/rectangle.png);
+    background-image: url(./../img/rectangle.png);
     margin: 15px 0 15px 26px;
-    -webkit-transition: -webkit-transform .5s;
-    transition: -webkit-transform .5s;
-    transition: transform .5s;
-    transition: transform .5s, -webkit-transform .5s; }
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s; }
     .top__logo:hover {
       -webkit-transform: scaleX(-1);
               transform: scaleX(-1); }
   .top__link {
     font-size: 16px;
     line-height: 19px;
-    color: #3D4E61;
+    color: #3d4e61;
     text-decoration: none;
     margin-right: 30px;
     font-weight: bold; }
@@ -52,7 +49,7 @@ body {
     margin-top: 5px; }
 
 .main {
-  color: #3D4E61; }
+  color: #3d4e61; }
   .main__poster {
     width: 100%;
     margin-bottom: 40px; }
@@ -69,15 +66,15 @@ body {
   .main__main-heading {
     font-size: 36px;
     line-height: 42px;
-    color: #3D4E61; }
+    color: #3d4e61; }
   .main__main-heading-span {
     font-size: 16px;
     line-height: 19px;
-    color: #687C94; }
+    color: #687c94; }
   .main__characteristics {
     font-size: 16px;
     line-height: 19px;
-    color: #3D4E61;
+    color: #3d4e61;
     list-style-type: none;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -87,22 +84,22 @@ body {
   .main__text {
     font-size: 16px;
     line-height: 24px;
-    color: #3D4E61;
+    color: #3d4e61;
     width: 490px;
-    height: 120PX; }
+    height: 120px; }
   .main__contact-h {
     display: block;
     font-size: 16px;
     line-height: 19px;
-    color: #3D4E61;
+    color: #3d4e61;
     margin-bottom: 44px;
     font-weight: bold; }
 
 .form {
   width: 330px;
   height: 319px;
-  background: #FFFFFF;
-  border: 1px solid #E1E7ED;
+  background: #fff;
+  border: 1px solid #e1e7ed;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
@@ -114,34 +111,34 @@ body {
     -webkit-box-sizing: border-box;
             box-sizing: border-box; }
   .form__input-date {
-    border: 1px solid #E1E7ED;
+    border: 1px solid #e1e7ed;
     padding-left: 17px;
     margin-bottom: 16px;
     font-size: 16px;
     line-height: 19px;
-    color: #3D4E61; }
+    color: #3d4e61; }
   .form__input-guests {
-    border: 1px solid #E1E7ED;
+    border: 1px solid #e1e7ed;
     padding-left: 17px;
     margin-bottom: 24px;
     font-size: 16px;
     line-height: 19px;
-    color: #3D4E61; }
+    color: #3d4e61; }
   .form__input-book {
     margin-bottom: 38px;
-    background: #FD5C63;
+    background: #fd5c63;
     border-radius: 4px;
     color: white;
     display: block;
     text-align: center;
     padding-top: 12px;
     text-decoration: none;
-    -webkit-transition: background .5s, color .5s, border .5s;
-    transition: background .5s, color .5s, border .5s; }
+    -webkit-transition: background 0.5s, color 0.5s, border 0.5s;
+    transition: background 0.5s, color 0.5s, border 0.5s; }
     .form__input-book:hover {
       background: white;
-      color: #FD5C63;
-      border: 1px solid  #FD5C63; }
+      color: #fd5c63;
+      border: 1px solid  #fd5c63; }
   .form__price {
     margin-bottom: 30px;
     margin-top: 15px;
@@ -156,7 +153,7 @@ body {
   .amenities__title {
     font-size: 20px;
     line-height: 23px;
-    color: #3D4E61; }
+    color: #3d4e61; }
   .amenities__item {
     width: 176px;
     margin-bottom: 13px; }
@@ -165,14 +162,14 @@ body {
     font-size: 16px;
     line-height: 19px;
     font-weight: bold;
-    color: #3D4E61;
+    color: #3d4e61;
     margin-bottom: 66px;
     display: block; }
 
 .reviews__review-text {
   font-size: 16px;
   line-height: 23px;
-  color: #3D4E61;
+  color: #3d4e61;
   margin-top: 23px;
   height: 120px; }
 
@@ -180,13 +177,13 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 40px;
-  background: #C4C4C4;
+  background: #c4c4c4;
   display: inline-block; }
 
 .reviews__review-person-name {
   font-size: 20px;
   line-height: 27px;
-  color: #3D4E61;
+  color: #3d4e61;
   font-weight: bold; }
 
 .reviews__review-cont {
@@ -198,19 +195,19 @@ body {
   font-weight: bold;
   font-size: 28px;
   line-height: 33px;
-  color: #3D4E61;
+  color: #3d4e61;
   margin-bottom: 11px; }
 
 .who-hosted-span {
   font-size: 14px;
   line-height: 16px;
-  color: #3D4E61;
+  color: #3d4e61;
   margin-bottom: 10px; }
 
 .who-hosted-text {
   font-size: 16px;
   line-height: 19px;
-  color: #3D4E61; }
+  color: #3d4e61; }
 
 .who-hosted-contact {
   display: block;
@@ -228,8 +225,8 @@ body {
   padding-top: 12px;
   margin-bottom: 75px;
   margin-top: 30px;
-  -webkit-transition: background .5s, color .5s, border .5s;
-  transition: background .5s, color .5s, border .5s; }
+  -webkit-transition: background 0.5s, color 0.5s, border 0.5s;
+  transition: background 0.5s, color 0.5s, border 0.5s; }
 
 .who-hosted-contact:hover {
   background: #118488;
@@ -242,15 +239,16 @@ body {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: #FFFFFF;
-  -webkit-box-shadow: 0px -1px 0px #E1E7ED;
-          box-shadow: 0px -1px 0px #E1E7ED; }
+  background: #fff;
+  -webkit-box-shadow: 0 -1px 0 #e1e7ed;
+          box-shadow: 0 -1px 0 #e1e7ed; }
 
-.bottom a, .bottom span {
+.bottom a,
+.bottom span {
   display: block;
   font-size: 16px;
   line-height: 19px;
-  color: #3D4E61; }
+  color: #3d4e61; }
 
 .bottom a {
   text-decoration: none;

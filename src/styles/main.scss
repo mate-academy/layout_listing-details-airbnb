@@ -1,36 +1,36 @@
 @font-face {
-  font-family: Avenir; /* Имя шрифта */
-  src: url(../fonts/Avenir-Book.ttf); /* Путь к файлу со шрифтом */
- }
+  font-family: Avenir, sans-serif;
+  src: url(./fonts/Avenir-Book.ttf);
+}
 
 body {
   margin: 0;
-  font-family: Avenir;
+  font-family: Avenir, sans-serif;
 }
 
 .top {
   height: 60px;
   display: flex;
   justify-content: space-between;
-  box-shadow: 0px 1px 0px #E1E7ED;
+  box-shadow: 0 1px 0 #e1e7ed;
 
   &__logo {
     display: block;
     width: 30px;
     height: 30px;
-    background: url(../img/rectangle.png);
+    background-image: url(./../img/rectangle.png);
     margin: 15px 0 15px 26px;
-    transition: transform .5s;
+    transition: transform 0.5s;
 
     &:hover {
-      transform: scaleX(-1)
+      transform: scaleX(-1);
     }
   }
 
   &__link {
     font-size: 16px;
     line-height: 19px;
-    color: #3D4E61;
+    color: #3d4e61;
     text-decoration: none;
     margin-right: 30px;
     font-weight: bold;
@@ -49,12 +49,11 @@ body {
 
   &__menu-container {
     margin-top: 5px;
-    }
-
+  }
 }
 
-.main{
-  color: #3D4E61;
+.main {
+  color: #3d4e61;
 
   &__poster {
     width: 100%;
@@ -74,18 +73,18 @@ body {
   &__main-heading {
     font-size: 36px;
     line-height: 42px;
-    color: #3D4E61;
+    color: #3d4e61;
   }
   &__main-heading-span {
     font-size: 16px;
     line-height: 19px;
-    color: #687C94;
+    color: #687c94;
   }
 
   &__characteristics {
     font-size: 16px;
     line-height: 19px;
-    color: #3D4E61;
+    color: #3d4e61;
     list-style-type: none;
     display: flex;
     padding-left: 0;
@@ -95,16 +94,16 @@ body {
   &__text {
     font-size: 16px;
     line-height: 24px;
-    color: #3D4E61;
+    color: #3d4e61;
     width: 490px;
-    height: 120PX;
+    height: 120px;
   }
 
   &__contact-h {
     display: block;
     font-size: 16px;
     line-height: 19px;
-    color: #3D4E61;
+    color: #3d4e61;
     margin-bottom: 44px;
     font-weight: bold;
   }
@@ -113,8 +112,8 @@ body {
 .form {
   width: 330px;
   height: 319px;
-  background: #FFFFFF;
-  border: 1px solid #E1E7ED;
+  background: #fff;
+  border: 1px solid #e1e7ed;
   box-sizing: border-box;
   border-radius: 3px;
   padding: 30px 30px 38px;
@@ -127,40 +126,41 @@ body {
   }
 
   &__input-date {
-    border: 1px solid #E1E7ED;
+    border: 1px solid #e1e7ed;
     padding-left: 17px;
     margin-bottom: 16px;
     font-size: 16px;
     line-height: 19px;
-    color: #3D4E61;
+    color: #3d4e61;
   }
 
   &__input-guests {
-    border: 1px solid #E1E7ED;
+    border: 1px solid #e1e7ed;
     padding-left: 17px;
     margin-bottom: 24px;
     font-size: 16px;
     line-height: 19px;
-    color: #3D4E61;
+    color: #3d4e61;
   }
 
   &__input-book {
     margin-bottom: 38px;
-    background: #FD5C63;
+    background: #fd5c63;
     border-radius: 4px;
     color: white;
     display: block;
     text-align: center;
     padding-top: 12px;
     text-decoration: none;
-    transition: background .5s, color .5s, border .5s;
+    transition: background 0.5s, color 0.5s, border 0.5s;
 
     &:hover {
       background: white;
-      color: #FD5C63;
-      border: 1px solid  #FD5C63;
+      color: #fd5c63;
+      border: 1px solid  #fd5c63;
     }
   }
+
   &__price {
     margin-bottom: 30px;
     margin-top: 15px;
@@ -175,7 +175,7 @@ body {
   &__title {
     font-size: 20px;
     line-height: 23px;
-    color: #3D4E61;
+    color: #3d4e61;
   }
 
   &__item {
@@ -188,7 +188,7 @@ body {
     font-size: 16px;
     line-height: 19px;
     font-weight: bold;
-    color: #3D4E61;
+    color: #3d4e61;
     margin-bottom: 66px;
     display: block;
   }
@@ -197,7 +197,7 @@ body {
 .reviews__review-text {
   font-size: 16px;
   line-height: 23px;
-  color: #3D4E61;
+  color: #3d4e61;
   margin-top: 23px;
   height: 120px;
 }
@@ -206,13 +206,14 @@ body {
   width: 50px;
   height: 50px;
   border-radius: 40px;
-  background: #C4C4C4;
+  background: #c4c4c4;
   display: inline-block;
 }
+
 .reviews__review-person-name {
   font-size: 20px;
   line-height: 27px;
-  color: #3D4E61;
+  color: #3d4e61;
   font-weight: bold;
 }
 
@@ -226,21 +227,21 @@ body {
   font-weight: bold;
   font-size: 28px;
   line-height: 33px;
-  color: #3D4E61;
+  color: #3d4e61;
   margin-bottom: 11px;
 }
 
 .who-hosted-span {
   font-size: 14px;
   line-height: 16px;
-  color: #3D4E61;
+  color: #3d4e61;
   margin-bottom: 10px;
 }
 
 .who-hosted-text {
   font-size: 16px;
   line-height: 19px;
-  color: #3D4E61;
+  color: #3d4e61;
 }
 
 .who-hosted-contact {
@@ -258,7 +259,7 @@ body {
   padding-top: 12px;
   margin-bottom: 75px;
   margin-top: 30px;
-  transition: background .5s, color .5s, border .5s;
+  transition: background 0.5s, color 0.5s, border 0.5s;
 }
 
 .who-hosted-contact:hover {
@@ -269,25 +270,25 @@ body {
 
 .bottom {
   display: flex;
-  justify-content:space-around ;
-  background: #FFFFFF;
-  box-shadow: 0px -1px 0px #E1E7ED;
+  justify-content: space-around ;
+  background: #fff;
+  box-shadow: 0 -1px 0 #e1e7ed;
 }
 
-.bottom a, .bottom span  {
+.bottom a,
+.bottom span {
   display: block;
   font-size: 16px;
-line-height: 19px;
-color: #3D4E61;
+  line-height: 19px;
+  color: #3d4e61;
 }
 
 .bottom a {
   text-decoration: none;
   margin-bottom: 9px;
 }
+
 .bottom span {
   font-weight: bold;
   margin-bottom: 20px;
 }
-
-
