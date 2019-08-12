@@ -3,5 +3,273 @@
 @import "typography";
 
 body {
-  background: $c-gray;
+  margin: 0;
+  padding: 0;
+  font-family: Avenir, sans-serif;
+}
+
+* {
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 19px 0 26px;
+  box-shadow: 0 1px 0 #e1e7ed;
+
+  &__nav {
+    display: flex;
+    font-family: Avenir, sans-serif;
+    font-size: 16px;
+    line-height: 60px;
+    align-items: center;
+  }
+
+  &__nav-link1 {
+    color: #3d4e61;
+  }
+
+  &__nav-link2 {
+    margin-left: 30px;
+    color: #3d4e61;
+  }
+
+  &__nav-link3 {
+    margin-left: 30px;
+    color: #3d4e61;
+  }
+
+  &__nav-user-photo img {
+    margin-left: 40px;
+    align-items: center;
+  }
+}
+
+.main {
+  &__container {
+    display: grid;
+    grid-template-columns: 492px 330px;
+    grid-column-gap: 80px;
+    padding: 39px 269px 75px 270px;
+  }
+
+  &__photo {
+    width: 100%;
+  }
+
+  &__content-apartment {
+    margin-bottom: 66px;
+  }
+
+  &__content-reviews {
+    margin-bottom: 14px;
+  }
+
+  &__container-form {
+    padding: 30px 30px 38px;
+    background: #fff;
+    border: 1px solid #e1e7ed;
+    box-sizing: border-box;
+    border-radius: 3px;
+    height: 319px;
+  }
+
+  &__footer {
+    background: #fff;
+    box-shadow: 0 -1px 0 #e1e7ed;
+    padding: 44px 300px 43px 240px;
+    display: grid;
+    grid-template-columns: 176px 176px 176px;
+    grid-column-gap: 185px;
+  }
+}
+
+.apartment {
+
+  &__h1 {
+    font-size: 36px;
+    line-height: 42px;
+    color: #3d4e61;
+    margin-bottom: 10px;
+  }
+
+  &__span {
+    font-size: 16px;
+    line-height: 19px;
+    color: #687c94;
+    margin-bottom: 15px;
+  }
+
+  &__rooms {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 28px;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 24px;
+    color: #3d4e61;
+    height: 120px;
+  }
+
+  &__contact-links {
+    margin-bottom: 44px;
+    cursor: pointer;
+  }
+
+  &__amenities {
+    display: grid;
+    grid-template-columns: 2fr;
+    font-size: 20px;
+    line-height: 23px;
+    color: #3d4e61;
+    margin-bottom: 21px;
+  }
+}
+
+.text {
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d4e61;
+}
+
+.reviews {
+  &__h2 {
+    font-size: 28px;
+    line-height: 33px;
+    color: #3d4e61;
+  }
+
+  &__user {
+    display: flex;
+    flex-wrap: nowrap;
+  }
+
+  &__user-photo {
+    margin-right: 21px;
+  }
+
+  &__user-name {
+    font-size: 20px;
+    line-height: 27px;
+    color: #3d4e61;
+  }
+
+  &__feedback-user {
+    height: 100px;
+  }
+}
+
+.host {
+  &__h3 {
+    font-family: Roboto, sans-serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 28px;
+    line-height: 33px;
+    color: #3d4e61;
+    margin-bottom: 9px;
+  }
+
+  &__location {
+    font-size: 14px;
+    line-height: 16px;
+    color: #3d4e61;
+    margin-bottom: 7px;
+  }
+
+  &__feedback {
+    height: 70px;
+  }
+
+  &__contact-btn {
+    margin-top: 30px;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #118488;
+    border: 1px solid #118488;
+    box-sizing: border-box;
+    border-radius: 4px;
+    width: 150px;
+    height: 50px;
+    cursor: pointer;
+  }
+
+  &__contact-btn:hover {
+    color: #fff;
+    background-color: #118488;
+  }
+}
+
+.form {
+  &__rate {
+    margin-bottom: 39px;
+  }
+
+  &__date {
+    border: 1px solid #e1e7ed;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 270px;
+    height: 50px;
+    margin-bottom: 16px;
+    cursor: pointer;
+  }
+
+  &__guests {
+    border: 1px solid #e1e7ed;
+    box-sizing: border-box;
+    border-radius: 3px;
+    width: 270px;
+    height: 50px;
+    margin-bottom: 24px;
+    cursor: pointer;
+  }
+
+  &__btn {
+    background: #fd5c63;
+    border-radius: 4px;
+    width: 270px;
+    height: 50px;
+    color: #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+  }
+
+  &__btn:hover {
+    background: #fff;
+    color: #fd5c63;
+    border: 2px solid #fd5c63;
+    box-sizing: border-box;
+  }
+}
+
+.footer {
+
+  &__h4 {
+    margin-bottom: 20px;
+  }
+
+  &__list {
+    list-style: none;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  &__list-1 {
+    margin-bottom: 9px;
+    text-decoration: none;
+    color: #3d4e61;
+  }
+
+  &__list-2 {
+    margin-bottom: 9px;
+    width: 22px;
+    color: #3d4e61;
+  }
 }
