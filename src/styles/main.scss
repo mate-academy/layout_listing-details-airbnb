@@ -8,7 +8,7 @@ body {
   font-family: Avenir, sans-serif;
 }
 
-.top {
+.head {
   height: 60px;
   display: flex;
   justify-content: space-between;
@@ -49,10 +49,12 @@ body {
 
   &__menu-container {
     margin-top: 5px;
+    display: flex;
+    list-style-type: none;
   }
 }
 
-.main {
+.page {
   color: #3d4e61;
 
   &__poster {
@@ -196,6 +198,12 @@ body {
   }
 }
 
+.reviews___heading {
+  font-size: 28px;
+  line-height: 33px;
+  color: #3d4e61;
+}
+
 .reviews__review-text {
   font-size: 16px;
   line-height: 23px;
@@ -275,6 +283,16 @@ body {
   justify-content: space-around ;
   background: #fff;
   box-shadow: 0 -1px 0 #e1e7ed;
+
+  .section {
+    list-style-type: none;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3d4e61;
+    li {
+      margin-bottom: 9px;
+    }
+  }
 }
 
 .bottom a,
