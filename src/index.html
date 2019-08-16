@@ -1,14 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
-    <link rel="stylesheet" href="./styles/main.css">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirBnB</title>
+    <link rel="stylesheet" href="./styles/main.css" />
   </head>
+
   <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate Academy</h1>
+    <header class="header">
+      <a href="#" class="header__link logo">
+        <img src="./images/logotype.png" alt="logotype" class="logo__img" />
+      </a>
+
+      <div class="header__navigation">
+        <ul class="menu">
+          <li class="menu__item">
+            <a href="#">Become a host</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Trips</a>
+          </li>
+          <li class="menu__item">
+            <a href="#">Messages</a>
+          </li>
+        </ul>
+
+        <a href="#" class="user-profile">
+          <img
+            src="./images/user_photo.png"
+            alt="user photo"
+            class="user-profile__img"
+          />
+        </a>
+      </div>
+    </header>
+
+    <main class="main">
+      <div class="apartment-photo"></div>
+
+      <div class="container">
+        <section class="apartment-info">
+          <h1 class="apartment-info__title">
+            Quiet apartment
+          </h1>
+
+          <p class="apartment-info__subtitle">
+            Entire apartment
+          </p>
+
+          <div class="apartment-info__rooms">
+            <span class="room">4 guests</span>
+            <span class="room">1 bed</span>
+            <span class="room">1 bath</span>
+          </div>
+
+          <p class="apartment-info__locate">
+            City Apartment is newly renovated in the heart of Budapest, right in
+            the city center. Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et dolore magna
+            aliqua. Ut enim ad minim veniam.
+          </p>
+
+          <a href="#" class="apartment-info__contact">
+            Contact host
+          </a>
+
+          <div class="apartment-info__advantages advantages">
+            <h3 class="advantages__title">
+              Amenities
+            </h3>
+
+            <div class="advantages__list">
+              <span class="advantages__list--item">
+                Elevator
+              </span>
+              <span class="advantages__list--item">
+                Hair dryer
+              </span>
+              <span class="advantages__list--item">
+                Washer
+              </span>
+              <span class="advantages__list--item">
+                Kitchen
+              </span>
+            </div>
+
+            <a href="#" class="advantages__list-all">
+              Show all Amenities
+            </a>
+          </div>
+        </section>
+
+        <section class="reviews">
+          <h2 class="reviews__title">
+            Reviews
+          </h2>
+
+          <div class="reviews__wrapper review-detail">
+            <div class="review-detail__info">
+              <div class="review-detail__photo"></div>
+
+              <div class="review-detail__info--user">
+                <div class="review-detail__person">
+                  John
+                </div>
+
+                <span class="review-detail__data">
+                  September 2016
+                </span>
+              </div>
+            </div>
+
+            <div class="review-detail__text-review">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+              enim ad minim veniam.
+            </div>
+          </div>
+
+          <div class="reviews__wrapper review-detail">
+            <div class="review-detail__info">
+              <div class="review-detail__photo"></div>
+
+              <div class="review-detail__info--user">
+                <div class="review-detail__person">
+                  John
+                </div>
+
+                <span class="review-detail__data">
+                  September 2016
+                </span>
+              </div>
+            </div>
+
+            <div class="review-detail__text-review">
+              Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              Ut enim ad minim veniam.
+            </div>
+          </div>
+        </section>
+
+        <section class="host">
+          <h2 class="host__title">
+            Hosted by Jane
+          </h2>
+
+          <span class="host__location">
+            Budapest, Hungary
+          </span>
+
+          <p class="host__info">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et magna aliqua.
+          </p>
+
+          <a href="#" class="host__contact">
+            Contact Host
+          </a>
+        </section>
+
+        <form action="#" class="order-form">
+          <h3 class="order-form__title">
+            25$ per night
+          </h3>
+
+          <input type="date" class="order-form__field" placeholder="Date" />
+
+          <input type="number" class="order-form__field" placheolder="Guests" />
+
+          <button class="order-form__book">
+            Book
+          </button>
+        </form>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer-container">
+        <a href="#" class="footer__subtitle">
+          Airbnb
+        </a>
+        <a href="#" class="footer__subtitle">
+          Discover
+        </a>
+        <a href="#" class="footer__subtitle">
+          Hosting
+        </a>
+        <a href="#" class="footer__item">
+          About
+        </a>
+        <a href="#" class="footer__item">
+          Travel credit
+        </a>
+        <a href="#" class="footer__item">
+          Why host
+        </a>
+        <a href="#" class="footer__item">
+          Press
+        </a>
+        <a href="#" class="footer__item">
+          Business
+        </a>
+        <a href="#" class="footer__item">
+          Hospitality
+        </a>
+        <a href="#" class="footer__item">
+          Help
+        </a>
+        <a href="#" class="footer__item">
+          Guidebooks
+        </a>
+        <a href="#" class="footer__item">
+          Community
+        </a>
+      </div>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>

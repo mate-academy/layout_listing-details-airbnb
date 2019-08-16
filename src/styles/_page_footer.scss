@@ -1,0 +1,25 @@
+@import "variables";
+
+.footer {
+  padding: 44px 270px;
+  box-shadow: 0 -1px 0 #e1e7ed;
+  
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    grid-gap: 20px;
+  }
+
+  &__subtitle {
+    font-weight: bold;
+  }
+
+  & a {
+    color: $main-color;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+}

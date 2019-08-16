@@ -1,0 +1,203 @@
+@import "variables";
+
+.apartment-photo {
+  width: 100%;
+  height: 464px;
+  background: url("../images/appart._photo.png") no-repeat center;
+  background-size: cover;
+}
+
+.apartment-info {
+  &__title {
+    font-size: 36px;
+    margin-bottom: 11px;
+  }
+
+  &__subtitle {
+    color: #687c94;
+    margin-bottom: 15px;
+  }
+
+  &__rooms {
+    margin-bottom: 28px;
+    width: 260px;
+    display: flex;
+
+    & .room {
+      width: 81px;
+    }
+  }
+
+  &__locate {
+    width: 490px;
+    margin-bottom: 22px;
+  }
+
+  &__contact {
+    color: $main-color;
+    display: block;
+    margin-bottom: 44px;
+    font-weight: bold;
+    width: 176px;
+
+    &:hover {
+      color: $secondary-color;
+    }
+  }
+
+  & .advantages {
+
+    &__title {
+      font-size: 20px;
+      margin-bottom: 21px;
+    }
+
+    &__list {
+      display: grid;
+      grid-template-columns: repeat(2, 176px);
+      grid-template-rows: auto;
+      gap: 13px 19px;
+      margin-bottom: 13px;
+    }
+
+    &__list-all {
+      color: $main-color;
+      display: block;
+      margin-bottom: 66px;
+      font-weight: bold;
+      width: 176px;
+
+      &:hover {
+        color: $secondary-color;
+      }
+    }
+  }
+}
+
+.reviews {
+  &__title {
+    font-size: 28px;
+    margin-bottom: 34px;
+  }
+
+  &__wrapper {
+    margin-bottom: 17px;
+
+    & .review-detail {
+      &__info {
+        display: flex;
+
+        &--user {
+          margin-bottom: 23px;
+        }
+      }
+
+      &__photo {
+        width: 50px;
+        height: 50px;
+        background: #c4c4c4;
+        border-radius: 50%;
+        margin-right: 21px;
+      }
+
+      &__person {
+        font-size: 20px;
+        font-weight: bold;
+      }
+
+      &__data {
+        font-size: 14px;
+      }
+
+      &__text-review {
+        width: 482px;
+        height: 104px;
+      }
+    }
+  }
+}
+
+.host {
+  &__title {
+    font-size: 28px;
+    margin-bottom: 11px;
+  }
+
+  &__location {
+    font-size: 14px;
+    margin-bottom: 7px;
+    display: block;
+  }
+
+  &__info {
+    width: 482px;
+    height: 104px;
+  }
+
+  &__contact {
+    width: 150px;
+    height: 50px;
+    display: block;
+    color: #118488;
+    border: 1px solid #118488;
+    box-sizing: border-box;
+    border-radius: 4px;
+    padding: 15px 24px 13px 27px;
+    transition: 0.5s all ease;
+
+    &:hover {
+      background-color: #118488;
+      color: #fff;
+    }
+  }
+}
+
+.order-form {
+  border: 1px solid #e1e7ed;
+  box-sizing: border-box;
+  width: 330px;
+  border-radius: 3px;
+  padding: 30px 30px 38px;
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  &__title {
+    margin-bottom: 39px;
+  }
+
+  &__field {
+    display: block;
+    border: 1px solid #e1e7ed;
+    box-sizing: border-box;
+    border-radius: 3px;
+    padding: 13px 0 14px 17px;
+    width: 270px;
+    height: 50px;
+    margin-bottom: 16px;
+
+    &:focus {
+      outline-color: $secondary-color;
+    }
+  }
+
+  &__book {
+    background: $secondary-color;
+    border-radius: 4px;
+    padding: 15px 96px 13px;
+    border: 0;
+    color: #fff;
+    cursor: pointer;
+    width: 270px;
+    height: 50px;
+    box-sizing: border-box;
+
+    &:hover {
+      box-shadow: 0 0 5px #cc1212;
+    }
+
+    &:focus {
+      outline-color: $secondary-color;
+    }
+  }
+}
