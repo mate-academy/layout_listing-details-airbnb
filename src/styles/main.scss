@@ -1,7 +1,34 @@
-@import "utils";
 @import "fonts";
-@import "typography";
+@import "page_header";
+@import "page_main";
+@import "page_footer";
 
 body {
-  background: $c-gray;
+  margin: 0;
+  font-family: "Avenir", sans-serif;
+  color: $main-color;
+  font-size: 16px;
+}
+
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul,
+li {
+  list-style: none;
+  margin: 0;
+}
+
+.container {
+  width: 900px;
+  margin: 39px auto 75px;
+  position: relative;
 }
