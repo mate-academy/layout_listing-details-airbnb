@@ -141,12 +141,11 @@
     border: 1px solid #118488;
     box-sizing: border-box;
     border-radius: 4px;
-    padding: 15px 24px 13px 27px;
+    padding: 14px 24px 13px 27px;
     transition: 0.5s all ease;
 
     &:hover {
-      background-color: #118488;
-      color: #fff;
+      box-shadow: 0 0 5px #118488;
     }
   }
 }
