@@ -1,0 +1,10 @@
+@import "../fonts";
+
+body {
+  margin: 0;
+  font-family: $main-font-famaly;
+  font-size: $main-font-size;
+  line-height: $main-line-height;
+  color: $main-color-text;
+  box-sizing: border-box;
+}

@@ -1,0 +1,40 @@
+.line {
+  color: #e1e7ed;
+  margin-top: 0;
+  margin-bottom: 44px;
+}
+
+.footer {
+  width: 900px;
+  margin: 0 auto 43px;
+  display: grid;
+  grid-template-columns: repeat(3, 300px);
+
+  &__menu {
+    list-style: none;
+    margin-top: 0;
+    padding: 0;
+
+    &-head {
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    &-li {
+      margin-bottom: 10px;
+    }
+
+    &-link {
+      color: $main-color-text;
+      text-decoration: none;
+
+      &:visited {
+        color: inherit;
+      }
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+}
