@@ -33,7 +33,7 @@
       }
 
       &:hover {
-        text-decoration: underline;
+        @include hover-effect-text;
       }
     }
   }

@@ -35,6 +35,11 @@
     &-contact {
       font-weight: bold;
       margin-bottom: 44px;
+      text-decoration: none;
+      color: $main-color-text;
+      &:hover {
+        @include hover-effect-text;
+      }
     }
 
     &-amenities {
@@ -53,6 +58,12 @@
     &-amenities-all {
       font-weight: bold;
       margin-bottom: 66px;
+      text-decoration: none;
+      color: $main-color-text;
+
+      &:hover {
+        @include hover-effect-text;
+      }
     }
   }
 
@@ -84,6 +95,7 @@
         font-family: inherit;
         font-size: 16px;
         line-height: 19px;
+        color: inherit;
         &::placeholder {
           font-family: inherit;
           font-size: 16px;

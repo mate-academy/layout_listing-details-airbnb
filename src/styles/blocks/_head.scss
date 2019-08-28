@@ -31,9 +31,7 @@
           color: inherit;
 
           &:hover {
-            text-decoration: underline;
-            text-decoration-color: $main-color-text;
-            color: black;
+            @include hover-effect-text;
           }
         }
 

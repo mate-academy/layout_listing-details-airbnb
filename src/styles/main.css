@@ -51,7 +51,6 @@ body {
 }
 .header__menu-items-ul-li:hover {
   text-decoration: underline;
-  text-decoration-color: #3d4e61;
   color: black;
 }
 .header__menu-items-ul-photo {
@@ -98,6 +97,12 @@ body {
 .content__info-contact {
   font-weight: bold;
   margin-bottom: 44px;
+  text-decoration: none;
+  color: #3d4e61;
+}
+.content__info-contact:hover {
+  text-decoration: underline;
+  color: black;
 }
 .content__info-amenities {
   font-size: 20px;
@@ -113,6 +118,12 @@ body {
 .content__info-amenities-all {
   font-weight: bold;
   margin-bottom: 66px;
+  text-decoration: none;
+  color: #3d4e61;
+}
+.content__info-amenities-all:hover {
+  text-decoration: underline;
+  color: black;
 }
 .content__booking {
   box-sizing: border-box;
@@ -141,6 +152,7 @@ body {
   font-family: inherit;
   font-size: 16px;
   line-height: 19px;
+  color: inherit;
 }
 .content__booking-form-input::placeholder {
   font-family: inherit;
@@ -274,6 +286,7 @@ body {
 }
 .footer__menu-link:hover {
   text-decoration: underline;
+  color: black;
 }
 
 /*# sourceMappingURL=main.css.map */

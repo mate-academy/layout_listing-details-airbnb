@@ -9,7 +9,9 @@
   <body>
     <header class="header">
       <div class="header__menu">
-        <a href="#"><img src="./images/logo.png" alt="logo AirBnB" class="header__menu-logo"></a>
+        <a href="#">
+          <img src="./images/logo.png" alt="logo AirBnB" class="header__menu-logo">
+        </a>
         <nav class="header__menu-items">
           <ul class="header__menu-items-ul">
             <li>
@@ -29,7 +31,7 @@
           </ul>
         </nav>
       </div>
-      <img src="./images/image_2000.png" alt="" class="header__img">
+      <img src="./images/image_2000.png" alt="photo apartment" class="header__img">
     </header>
 
     <section class="content">
@@ -41,11 +43,12 @@
           <span>1 bed</span>
           <span>1 bath</span>
         </p>
-        <p class="content__info-description">City Apartment is newly renovated in the heart of Budapest, right in the city center.
+        <p class="content__info-description">
+          City Apartment is newly renovated in the heart of Budapest, right in the city center.
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
           ut labore et dolore magna aliqua. Ut enim ad minim veniam.
         </p>
-        <p class="content__info-contact">Contact host</p>
+        <p><a href="#" class="content__info-contact">Contact host</a></p>
         <p class="content__info-amenities">Amenities</p>
         <div class="content__info-grid-amenities">
           <span>Elevator</span>
@@ -53,13 +56,13 @@
           <span>Washer</span>
           <span>Kitchen</span>
         </div>
-        <p class="content__info-amenities-all">Show All Amenities</p>
+        <p><a href="#" class="content__info-amenities-all">Show All Amenities</a></p>
       </section>
       <section class="content__booking">
         <form class="content__booking-form" action="#" name="bookin-form">
           <p class="content__booking-form-info">25$ per night</p>
-          <input class="content__booking-form-input" type="text" placeholder="Date" name="date">
-          <input class="content__booking-form-input" type="text" placeholder="Guests" name="guests">
+          <input class="content__booking-form-input" type="text" placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')" name="date">
+          <input class="content__booking-form-input" type="number" min="1" max="4" placeholder="Guests" name="guests">
           <input class="content__booking-form-submit" type="button" value="Book">
         </form>
       </section>
