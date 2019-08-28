@@ -1,0 +1,43 @@
+.reviews {
+  width: 900px;
+  margin: 0 auto;
+
+  &__head {
+    font-size: 28px;
+    line-height: 33px;
+    margin-bottom: 34px;
+  }
+
+  &__item {
+    width: 500px;
+
+    &-head {
+      margin-bottom: 14px;
+
+      &-name {
+        font-size: 20px;
+        line-height: 27px;
+        font-weight: bold;
+        margin-bottom: 0;
+      }
+
+      &-date {
+        font-size: 20px;
+        line-height: 27px;
+      }
+
+      &-photo {
+        float: left;
+        margin-right: 21px;
+      }
+    }
+
+    &-message {
+      margin: 0;
+      display: inline-block;
+      line-height: 28px;
+      font-size: 18px;
+      height: 120px;
+    }
+  }
+}
