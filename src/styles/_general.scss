@@ -1,0 +1,72 @@
+body {
+	font-family: "Roboto", sans-serif;
+	color: $main-text-col;
+}
+
+.wrapper {
+	display: flex;
+	justify-content: space-between;
+	max-width: 920px;
+	margin: 0 auto;
+	padding: 40px 20px 80px;
+}
+
+h2 {
+	font-size: 36px;
+	line-height: 42px;
+	font-weight: 500;
+}
+
+h3 {
+	font-size: 28px;
+	line-height: 33px;
+	font-weight: 600;
+}
+
+h4 {
+	font-size: 20px;
+	line-height: 23px;
+	font-weight: 600;
+}
+
+h5 {
+	font-size: 16px;
+	line-height: 19px;
+	font-weight: 600;
+}
+
+h6 {
+	font-size: 14px;
+	line-height: 16px;
+	font-weight: 600;
+}
+
+p {
+	font-size: 16px;
+	line-height: 19px;
+}
+
+.button {
+	height: 50px;
+	width: 150px;
+	border-radius: 4px;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 22px;
+	outline: none;
+	border: 1px solid $main-btn-col;
+	background-color: $main-btn-col;
+	color: #fff;
+	transition: all 0.3s ease-in-out;
+
+	&:hover {
+		color: $btn-border-col;
+		cursor: pointer;
+		border: 1px solid $btn-border-col;
+		background-color: #fff;
+	}
+
+	&:active {
+		background-color: darken(#fff, 10%);
+	}
+}

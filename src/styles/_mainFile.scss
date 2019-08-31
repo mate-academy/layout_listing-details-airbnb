@@ -1,0 +1,43 @@
+.main__container {
+	width: 55%;
+}
+
+.apartment {
+	&__title {
+		padding-bottom: 20px;	
+	}
+
+	&__entire {
+		font-size: 16px;
+		line-height: 19px;
+		color: #687c94;
+		padding-bottom: 15px;	
+	}
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		max-width: 230px;
+		padding-bottom: 30px;
+	}
+
+	&__text {
+		padding-bottom: 30px;
+	}
+
+	& h5 {
+		font-weight: bold;
+		padding-bottom: 50px;
+	}
+
+	& h4 {
+		padding-bottom: 25px;
+	}
+
+	&__equipment {
+		display: flex;
+		justify-content: space-between;
+		width: 280px;
+		padding-bottom: 25px;
+	}
+}

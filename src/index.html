@@ -3,12 +3,130 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Site</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate Academy</h1>
+  	<!-- header start -->
+    <header class="header">
+    	<h1 class="header__logo">
+    		<a href="">
+    			<img src="images/logo.png" alt="Logo">
+    		</a>
+    	</h1>
+    	<nav class="navigation">
+    		<ul>
+    			<li><a href="#">Become a host</a></li>
+    			<li><a href="#">Trips</a></li>
+    			<li><a href="#">Messages</a></li>
+    		</ul>
+    		<div class="navigation__user"></div>
+    	</nav>
+    </header>
+    <!-- header end -->
+	<div class="main__img"></div>
+	<div class="wrapper">
+    	<main class="main__container">
+    		<!-- apartment start -->
+    		<section class="apartment">
+    			<h2 class="apartment__title">Quiet apartment</h2>
+    			<div class="apartment__entire">Entire apartment</div>
+    			<div class="apartment__container">
+    				<p>4 guests</p>
+    				<p>1 bed</p>
+    				<p>1 bath</p>
+    			</div>
+    			<p class="apartment__text">
+    				City Apartment is newly renovated in the heart of Budapest, right in the city center. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+    			</p>
+    			<h5>Contact host</h5>
+    			<h4>Amenities</h4>
+    			<div class="apartment__equipment">
+    				<p>Elevator</p>
+    				<p>Hair dryer</p>
+    			</div>
+    			<div class="apartment__equipment">
+    				<p>Washer</p>
+    				<p>Kitchen</p>
+    			</div>
+    			<h5>Show All Amenities</h5>
+    		</section>
+    		<!-- apartment end -->
+    		<!-- review start -->
+    		<section class="review">
+    			<h3>Reviews</h3>
+    			<div class="review__container">
+    				<div class="review__user">
+    					<div class="review__photo"></div>
+    					<div class="review__info">
+    						<h4 class="review__name">John</h4>
+    						<p class="review__date">September 2016</p>
+    					</div>
+    				</div>
+    				<p class="review__text">
+    					Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+    				</p>
+    			</div>
+    			<div class="review__container">
+    				<div class="review__user">
+    					<div class="review__photo"></div>
+    					<div class="review__info">
+    						<h4 class="review__name">John</h4>
+    						<p class="review__date">September 2016</p>
+    					</div>
+    				</div>
+    				<p class="review__text">
+    					Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+    				</p>
+    			</div>
+    		</section>
+    		<!-- review end -->
+    		<!-- hosted start -->
+    		<section class="hosted">
+    			<h3>Hosted by Jane</h3>
+    			<p class="hosted__map">Budapest, Hungary</p>
+    			<p class="hosted__text">
+    				Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.
+    			</p>
+    			<button class="button hosted__btn">Contact Host</button>
+    		</section>
+    		<!-- hosted end -->
+    	</main>
+    	<!-- sidebar start -->
+    	<aside class="sidebar">
+    		<p>25$ per night</p>
+    		<input type="text" placeholder="Date">
+    		<input type="text" placeholder="Guests">
+    		<button class="button sidebar__btn">Book</button>
+    	</aside>
+    	<!-- sidebar end -->
+    </div>		
+	<!-- footer start -->
+	<footer class="footer">
+		<div class="footer__container">
+			<div class="footer__airbnb">
+				<h6>Airbnb</h6>
+				<p>About</p>
+				<p>Press</p>
+				<p>Help</p>
+			</div>
+			<div class="footer__discover">
+				<h6>Discover</h6>
+				<p>Travel credit</p>
+				<p>Business</p>
+				<p>Guidebooks</p>
+			</div>
+			<div class="footer__hosting">
+				<h6>Hosting</h6>
+				<p>Why host</p>
+				<p>Hospitality</p>
+				<p>Community</p>
+			</div>
+		</div>
+	</footer>
+	<!-- footer end -->
+    
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
