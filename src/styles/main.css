@@ -329,6 +329,11 @@ body {
   list-style: none;
 }
 
+.footer__list-item--link {
+  text-decoration: none;
+  color: #3d4e61;
+}
+
 .footer__list-item:first-child {
   font-weight: 600;
   margin-bottom: 20px;
