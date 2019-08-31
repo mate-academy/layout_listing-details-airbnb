@@ -50,7 +50,7 @@ body {
           align-items: center;
 }
 
-.nav__links {
+.nav__link {
   text-decoration: none;
   font-size: 16px;
   font-weight: 700;
@@ -59,7 +59,7 @@ body {
   margin-right: 30px;
 }
 
-.nav__links:hover {
+.nav__link:hover {
   color: #fd5c63;
 }
 
