@@ -1,0 +1,19 @@
+@media screen and (max-width: 800px) {
+	.wrapper {
+		flex-direction: column-reverse;
+		align-items: center;
+	}
+
+	.main__container {
+		width: 70%;
+	}
+
+	.sidebar {
+		margin: 40px 0;
+		width: 50%;
+	}
+
+	.footer__container {
+		padding: 0 25px;
+	} 
+}

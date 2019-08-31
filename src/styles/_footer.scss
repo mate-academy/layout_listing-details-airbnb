@@ -1,0 +1,30 @@
+.footer {
+	padding: 45px 0;
+	box-sizing: border-box;
+	border-top: 1px solid #e1e7ed;
+
+	&__container {
+		display: flex;
+		justify-content: space-between;
+		padding: 0 10px;
+		max-width: 920px;
+		margin: 0 auto;
+		padding-right: 100px;
+		box-sizing: border-box;
+	}
+
+	& h6 {
+		padding-bottom: 20px;
+	}
+
+	&	p {
+		&:hover {
+			text-decoration: underline;
+			cursor: pointer;
+		}
+
+		&:not(:last-child) {
+			padding-bottom: 10px;
+		}
+	}
+}

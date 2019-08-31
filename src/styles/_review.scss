@@ -1,0 +1,30 @@
+.review {
+	& h3 {
+		padding-bottom: 35px;
+	}
+
+	&__photo {
+		background-image: url("../images/steve-jobs.jpg");
+		background-position: -5px 0;
+		background-repeat: no-repeat;
+		background-size: cover;
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+	}
+
+	&__user {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		max-width: 190px;
+	}
+
+	&__name {
+		padding-bottom: 5px;
+	}
+
+	&__text {
+		padding: 15px 0 25px;
+	}
+}
