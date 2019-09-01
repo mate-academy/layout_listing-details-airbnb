@@ -38,6 +38,8 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
+  .header__logo {
+    max-height: 30px; }
   .header__nav-link1 {
     color: #3d4e61; }
   .header__nav-link2 {
@@ -50,16 +52,23 @@ body {
     margin-left: 40px;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
-
-.main__container {
-  display: grid;
-  grid-template-columns: 492px 330px;
-  grid-column-gap: 80px;
-  padding: 39px 269px 75px 270px; }
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .main__photo {
   width: 100%; }
+
+.main__wrapper {
+  margin: 0 auto;
+  width: 901px; }
+
+.main__container {
+  display: grid;
+  grid-template-columns: 491.09px 330px;
+  grid-column-gap: 79.91px;
+  padding: 39px 0 75px; }
 
 .main__content-apartment {
   margin-bottom: 66px; }
@@ -79,11 +88,7 @@ body {
 .main__footer {
   background: #fff;
   -webkit-box-shadow: 0 -1px 0 #e1e7ed;
-          box-shadow: 0 -1px 0 #e1e7ed;
-  padding: 44px 300px 43px 240px;
-  display: grid;
-  grid-template-columns: 176px 176px 176px;
-  grid-column-gap: 185px; }
+          box-shadow: 0 -1px 0 #e1e7ed; }
 
 .apartment__h1 {
   font-size: 36px;
@@ -105,7 +110,8 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  margin-bottom: 28px; }
+  margin-bottom: 28px;
+  margin-top: 15px; }
 
 .apartment__description {
   font-size: 16px;
@@ -128,7 +134,7 @@ body {
 .text {
   font-size: 16px;
   line-height: 19px;
-  color: #3d4e61; }
+  color: #000; }
 
 .reviews__h2 {
   font-size: 28px;
@@ -200,6 +206,7 @@ body {
   width: 270px;
   height: 50px;
   margin-bottom: 16px;
+  padding-left: 20px;
   cursor: pointer; }
 
 .form__guests {
@@ -210,6 +217,7 @@ body {
   width: 270px;
   height: 50px;
   margin-bottom: 24px;
+  padding-left: 16px;
   cursor: pointer; }
 
 .form__btn {
@@ -229,6 +237,14 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box; }
 
+.footer__container {
+  margin: 44px auto 43px;
+  width: 901px; }
+
+.footer__wrapper {
+  display: grid;
+  grid-template-columns: repeat(3, 300px); }
+
 .footer__h4 {
   margin-bottom: 20px; }
 
@@ -238,13 +254,9 @@ body {
   cursor: pointer; }
 
 .footer__list-1 {
-  margin-bottom: 9px;
-  text-decoration: none;
-  color: #3d4e61; }
+  margin-bottom: 9px; }
 
 .footer__list-2 {
-  margin-bottom: 9px;
-  width: 22px;
-  color: #3d4e61; }
+  margin-bottom: 9px; }
 
 /*# sourceMappingURL=main.css.map */

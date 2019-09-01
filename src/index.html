@@ -22,48 +22,36 @@
       </nav>
     </header>
 
-    <main>
+    <main class="main">
       <img class="main__photo" src="./images/background-photo.svg" alt="apartment's photo">
 
-      <div class="main__container">
-        <article class="main__content">
+      <div class="main__wrapper">
+        <div class="main__container">
+          <article class="main__content">
 
-          <div class="main__content-apartment">
-            <h1 class="apartment__h1">Quiet apartment</h1>
-            <span class="apartment__span">Entire apartment</span>
-            <div class="apartment__rooms text">
-              <div>4 guests</div>
-              <div>1 bed</div>
-              <div>1 bath</div>
-            </div>
-            <div class="apartment__description">City Apartment is newly renovated in the heart of Budapest, right in the city center. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
-            <div class="apartment__contact-links text">Contact host</div>
-            <div class="apartment__amenities">Amenities
-              <div class="text">Elevator</div>
-              <div class="text">Washer</div>
-              <div class="text">Hair dryer</div>
-              <div class="text">Kitchen</div>
-              <a class="text">Show All Amenities</a>
-            </div>
-          </div>
-
-          <div class="main__content-reviews">
-            <h2 class="reviews__h2">Reviews</h2>
-
-            <div class="reviews__user">
-              <img class="reviews__user-photo" src="./images/user-photo.svg" alt="user-photo">
-              <div class="reviews__user-name">
-                Juliya
-                September 2016
+            <div class="main__content-apartment">
+              <h1 class="apartment__h1">Quiet apartment</h1>
+              <span class="apartment__span">Entire apartment</span>
+              <div class="apartment__rooms text">
+                <div>4 guests</div>
+                <div>1 bed</div>
+                <div>1 bath</div>
+              </div>
+              <div class="apartment__description">City Apartment is newly renovated in the heart of Budapest, right in the city center. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+              <div class="apartment__contact-links text">Contact host</div>
+              <div class="apartment__amenities">Amenities
+                <div class="text">Elevator</div>
+                <div class="text">Washer</div>
+                <div class="text">Hair dryer</div>
+                <div class="text">Kitchen</div>
+                <a class="text">Show All Amenities</a>
               </div>
             </div>
-            <div class="reviews__feedback-user text">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et dolore magna
-              aliqua. Ut enim ad minim veniam.
-            </div>
 
-            <div class="reviews__user">
+            <div class="main__content-reviews">
+              <h2 class="reviews__h2">Reviews</h2>
+
+              <div class="reviews__user">
                 <img class="reviews__user-photo" src="./images/user-photo.svg" alt="user-photo">
                 <div class="reviews__user-name">
                   Juliya
@@ -71,29 +59,49 @@
                 </div>
               </div>
               <div class="reviews__feedback-user text">
-                Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                Ut enim ad minim veniam.
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et dolore magna
+                aliqua. Ut enim ad minim veniam.
               </div>
-          </div>
 
-          <div class="main__content-host">
-            <h3 class="host__h3">Hosted by Jane</h3>
-            <div class="host__location">Budapest, Hungary</div>
-            <div class="host__feedback text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-              do eiusmod tempor incididunt ut labore et magna aliqua.
+              <div class="reviews__user">
+                  <img class="reviews__user-photo" src="./images/user-photo.svg" alt="user-photo">
+                  <div class="reviews__user-name">
+                    Juliya
+                    September 2016
+                  </div>
+                </div>
+                <div class="reviews__feedback-user text">
+                  Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </div>
             </div>
-            <button class="host__contact-btn" type="button">Contact Host</button>
+
+            <div class="main__content-host">
+              <h3 class="host__h3">Hosted by Jane</h3>
+              <div class="host__location">Budapest, Hungary</div>
+              <div class="host__feedback text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                do eiusmod tempor incididunt ut labore et magna aliqua.
+              </div>
+              <button class="host__contact-btn" type="button">Contact Host</button>
+            </div>
+
+          </article>
+
+          <div class="main__container-form">
+            <div class="form__rate text">25$ per night</div>
+            <form action="booking-form">
+              <input class="form__date text" type="date" placeholder="Date">
+                <select  class="form__guests text">
+                  <option>Guests</option>
+                  <option>1</option>
+                  <option>2</option>
+                  <option>3</option>
+                  <option>4</option>
+                </select>
+              <input class="form__btn text" type="button" value="Book">
+            </form>
           </div>
-
-        </article>
-
-        <div class="main__container-form">
-          <div class="form__rate text">25$ per night</div>
-          <form action="booking-form">
-            <input class="form__date text" type="text" placeholder="Date">
-            <input class="form__guests text" type="text" placeholder="Guests">
-            <input class="form__btn text" type="button" value="Book">
-          </form>
         </div>
       </div>
 
@@ -101,29 +109,37 @@
 
     <footer class="main__footer">
 
-      <div class="footer__column">
-        <h4 class="footer__h4">Airbnb</h4>
-        <ul class="footer__list">
-          <li class="footer__list-1 text"><a href="#">About</a></li>
-          <li class="footer__list-2 text"><a href="#">Press</a></li>
-          <li class="footer__list-3 text"><a href="#">Help</a></li>
-        </ul>
-      </div>
-      <div class="footer__column">
-        <h4 class="footer__h4 text">Discover</h4>
-        <ul class="footer__list text">
-          <li class="footer__list-1 text"><a href="#">Travel credit</a></li>
-          <li class="footer__list-2 text"><a href="#">Business</a></li>
-          <li class="footer__list-3 text"><a href="#">Guidebooks</a></li>
-        </ul>
-      </div>
-      <div class="footer__column">
-        <h4 class="footer__h4">Hosting</h4>
-        <ul class="footer__list">
-          <li class="footer__list-1 text"><a href="#">Why hosting</a></li>
-          <li class="footer__list-2 text"><a href="#">Hospitality</a></li>
-          <li class="footer__list-3 text"><a href="#">Community</a></li>
-        </ul>
+      <div class="footer__container">
+
+        <div class="footer__wrapper">
+
+          <div class="footer__column">
+            <h4 class="footer__h4">Airbnb</h4>
+            <ul class="footer__list">
+              <a href="#"><li class="footer__list-1 text">About</li></a>
+              <a href="#"><li class="footer__list-2 text">Press</li></a>
+              <a href="#"><li class="footer__list-3 text">Help</li></a>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__h4 text">Discover</h4>
+            <ul class="footer__list text">
+              <a href="#"><li class="footer__list-1 text">Travel credit</li></a>
+              <a href="#"><li class="footer__list-2 text">Business</li></a>
+              <a href="#"><li class="footer__list-3 text">Guidebooks</li></a>
+            </ul>
+          </div>
+          <div class="footer__column">
+            <h4 class="footer__h4">Hosting</h4>
+            <ul class="footer__list">
+              <a href="#"><li class="footer__list-1 text">Why hosting</li></a>
+              <a href="#"><li class="footer__list-2 text">Hospitality</li></a>
+              <a href="#"><li class="footer__list-3 text">Community</li></a>
+            </ul>
+          </div>
+
+        </div>
+
       </div>
 
     </footer>
