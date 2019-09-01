@@ -6,6 +6,10 @@ body {
   margin: 0;
   font-family: Avenir, sans-serif; }
 
+a {
+  text-decoration: none;
+  color: #3d4e61; }
+
 .head {
   height: 60px;
   display: -webkit-box;
@@ -19,7 +23,6 @@ body {
   .head__logo {
     display: block;
     width: 30px;
-    height: 30px;
     background-image: url(./../images/rectangle.png);
     margin: 15px 0 15px 26px;
     -webkit-transition: -webkit-transform 0.5s;
@@ -65,7 +68,7 @@ body {
         justify-content: space-around;
     width: 1000px;
     margin: auto; }
-  .page__container-card {
+  .page__container_card {
     width: 500px; }
   .page__main-heading {
     font-size: 36px;
@@ -161,7 +164,7 @@ body {
   .amenities__item {
     width: 176px;
     margin-bottom: 13px; }
-  .amenities_show {
+  .amenities__show {
     text-decoration: none;
     font-size: 16px;
     line-height: 19px;
@@ -246,6 +249,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 40px 0;
   -ms-flex-pack: distribute;
       justify-content: space-around;
   background: #fff;

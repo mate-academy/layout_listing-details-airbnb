@@ -8,6 +8,11 @@ body {
   font-family: Avenir, sans-serif;
 }
 
+a {
+  text-decoration: none;
+  color: #3d4e61;
+}
+
 .head {
   height: 60px;
   display: flex;
@@ -17,7 +22,6 @@ body {
   &__logo {
     display: block;
     width: 30px;
-    height: 30px;
     background-image: url(./../images/rectangle.png);
     margin: 15px 0 15px 26px;
     transition: transform 0.5s;
@@ -69,7 +73,7 @@ body {
     margin: auto;
   }
 
-  &__container-card {
+  &__container_card {
     width: 500px;
   }
 
@@ -187,7 +191,7 @@ body {
     margin-bottom: 13px;
   }
 
-  &_show {
+  &__show {
     text-decoration: none;
     font-size: 16px;
     line-height: 19px;
@@ -280,6 +284,7 @@ body {
 
 .bottom {
   display: flex;
+  margin: 40px 0;
   justify-content: space-around ;
   background: #fff;
   box-shadow: 0 -1px 0 #e1e7ed;

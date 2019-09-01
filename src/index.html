@@ -11,17 +11,17 @@
       <a href="#" class="head__logo"></a>
       <nav class="head__menu">
         <ul class="head__menu-container">
-          <li class="head__link">Become a host</li>
-          <li class="head__link">Trips</li>
-          <li class="head__link">Messages</li>
+          <li class="head__link"><a href="">Become a host</a></li>
+          <li class="head__link"><a href="">Trips</a></li>
+          <li class="head__link"><a href="">Messages</a></li>
         </ul>
-      <a class="head__link" href="#"><img class="top__account" src="./images/ellipse.png" alt="kitchen"></a>
+      <a class="head__link" href="#"><img class="top__account" src="./images/ellipse.png" alt="quiet apartment"></a>
       </nav>
     </header>
     <main class="page">
-      <img class="page__poster" src="./images/image.png" alt="">
+      <img class="page__poster" src="./images/image.png" alt="page poster">
       <div class="page__container">
-        <div class="page__container-card">
+        <div class="page__container_card">
           <h1 class="page__main-heading">Quiet apartment</h1>
           <span class="page__main-heading-span">Entire apartment</span>
           <ul class="page__characteristics">
@@ -45,21 +45,24 @@
             <span class="amenities__item">Washer</span>
             <span class="amenities__item">Kitchen</span>
           </div>
-          <a href="" class="amenities_show">Show all ammenities</a>
+          <a href="" class="amenities__show">Show all ammenities</a>
           <div class="reviews">
             <h3 class="reviews___heading" >Reviews</h3>
             <section class="reviews__review">
               <div class="reviews__review-person" >
                 <span class="reviews__review-person-img"></span>
-                <span class="reviews__review-cont">
+                <div class="reviews__review-cont">
                   <div class="reviews__review-person-name">John</div>
                   <div class="reviews__review-person-date">September 2016</div>
-                </span>
+                </div>
               </div>
               <div class="reviews__review-text">
+                <p>
                   Lorem ipsum dolor sit amet, consectetur adipiscing elit,
                   sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
                   Ut enim ad minim veniam.
+                </p>
+
               </div>
             </section>
             <section class="reviews__review">
@@ -75,23 +78,20 @@
                 </div>
             </section>
             </div>
-            <h3 class="who-hosted-heading" >Hosted by Jane</h3>
+            <h2 class="who-hosted-heading" >Hosted by Jane</h2>
             <div class="who-hosted-span">Budapest, Hungary</div>
             <div class="who-hosted-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</div>
             <a href="" class="who-hosted-contact" >Contact host</a>
         </div>
-        <div class="form">
+        <div class="form" method="GET">
           <span class="form__price">25$ per night</span>
           <form action="">
-            <input type="text" class="form__input form__input-date" placeholder="Date">
-            <input type="text" class="form__input form__input-guests" placeholder="Guests">
+            <input type="text" class="form__input form__input-date" name = "input-date" placeholder="Date">
+            <input type="text" class="form__input form__input-guests" name = "input-guests"  placeholder="Guests">
             <a href="" class="form__input form__input-book">Book</a>
           </form>
         </div>
-
       </div>
-
-      <div class="hosted"></div>
     </main>
     <footer class="bottom">
       <ul class="section">
