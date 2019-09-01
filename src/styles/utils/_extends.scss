@@ -1,4 +1,30 @@
-%h1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
+%no-margin {
+  margin: 0;
+}
+
+%list {
+  @extend %no-margin;
+  list-style: none;
+  padding: 0;
+}
+
+%shadow {
+  box-shadow: 0 -1px 0 $main-border-color;
+}
+
+%border-radius {
+  border: 1px solid $main-border-color;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+
+%secondary-border-radius {
+  border-radius: 4px;
+}
+
+%link {
+  color: $main-text-color;
+  font-family: Avenir-Heavy, sans-serif;
+  text-decoration: none;
+  transition: 0.5s;
 }

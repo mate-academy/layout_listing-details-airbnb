@@ -1,0 +1,10 @@
+.banners__item {
+  height: auto;
+  max-height: 464px;
+  overflow: hidden;
+
+  .banners__image {
+    width: 100%;
+    height: auto;
+  }
+}

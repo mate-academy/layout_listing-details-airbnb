@@ -1,0 +1,33 @@
+.footer {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  padding: 44px 22%;
+  box-shadow: 0 -1px 0 $main-border-color;
+}
+
+@media (min-width: 2000px) {
+  .footer {
+    padding: 44px 27.5%;
+  }
+}
+
+.footer__title {
+  font-family: Avenir-Heavy, sans-serif;
+  margin-bottom: 20px;
+}
+
+.footer__list {
+  li:not(:last-child) {
+    margin-bottom: 9px;
+  }
+
+  a {
+    @extend %link;
+    color: $main-text-color;
+    font-family: Avenir-Book, sans-serif;
+  }
+
+  a:hover {
+    color: $main-accent-color;
+  }
+}
