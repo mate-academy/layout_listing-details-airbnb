@@ -1,8 +1,7 @@
 @font-face {
   font-family: "Avenir";
   src: url(../fonts/Avenir-Medium.ttf) format("truetype");
-  }
-
+}
 body {
   font-size: 16px;
   font-family: "Avenir", Arial, sans-serif;
@@ -25,15 +24,16 @@ body {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  & div {
-    margin-right: 30px;
-  }
+}
+.header__nav div {
+  margin-right: 30px;
 }
 
 a {
   text-decoration: none;
   color: #3d4e61;
 }
+
 .header__img {
   width: 100%;
 }
@@ -53,13 +53,13 @@ footer {
 
 .left {
   grid-column-start: 2;
-  h1 {
-    font-size: 36px;
-  }
-  .inside {
-    margin-bottom: 10px;
-    color: #687C94;
-  }
+}
+.left h1 {
+  font-size: 36px;
+}
+.left .inside {
+  margin-bottom: 10px;
+  color: #687C94;
 }
 
 .description {
@@ -114,9 +114,9 @@ footer {
 .inside-apart {
   display: flex;
   flex-direction: row;
-  & p {
-    margin-right: 30px;
-  }
+}
+.inside-apart p {
+  margin-right: 30px;
 }
 
 .contact {
@@ -128,9 +128,9 @@ footer {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  & p {
-    margin-top: 8px;
-  }
+}
+.amenities p {
+  margin-top: 8px;
 }
 
 .all_amenities {
@@ -139,10 +139,10 @@ footer {
 
 .review {
   margin-top: 33px;
-  &__text {
-    line-height: 22px;
-    height: 87px;
-  }
+}
+.review__text {
+  line-height: 22px;
+  height: 87px;
 }
 
 .review__person {
@@ -150,13 +150,13 @@ footer {
   flex-direction: row;
   align-items: flex-end;
   margin-bottom: 14px;
-  & .about-person {
-    margin-left: 21px;
-  }
-  &__name {
-    font-size: 20px;
-    line-height: 27px;
-  }
+}
+.review__person .about-person {
+  margin-left: 21px;
+}
+.review__person__name {
+  font-size: 20px;
+  line-height: 27px;
 }
 
 .contact-button {
@@ -182,6 +182,7 @@ footer {
 .hosted p {
   margin-top: 0;
 }
+
 .hosted h2 {
   font-family: Roboto;
   font-style: normal;
@@ -193,6 +194,8 @@ footer {
 
 .first-foot-column div,
 .second-foot-column div,
-.third-foot-column div{
+.third-foot-column div {
   margin-bottom: 9px;
 }
+
+/*# sourceMappingURL=main.css.map */

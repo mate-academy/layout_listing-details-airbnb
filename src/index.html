@@ -5,10 +5,127 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:700&display=swap" rel="stylesheet">
   </head>
-  <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
-  </body>
+<body>
+  <header>
+    <div class="header">
+      <div class="header__logo">
+        <img src="./images/Rectangle 2.svg" alt="">
+      </div>
+      <div class="header__nav">
+        <div><a href="">Become a host</a> </div>
+        <div><a href="">Trips</a> </div>
+        <div><a href="">Messages</a> </div>
+        <div class="header__nav__avatar">
+          <img src="./images/face.svg" alt="">
+        </div>
+      </div>
+    </div>
+    <div >
+      <img class="header__img" src="./images/header foto.jpg" alt="">
+    </div>
+  </header>
+
+  <main class="content">
+    <div class="left">
+      <h1>Quiet apartment</h1>
+      <p class="inside">Entire apartment</p>
+      <div class="inside-apart">
+        <p>4 guests</p>
+        <p>1 bed</p>
+        <p>1 bath</p>
+      </div>
+      <section>
+        <p class="description">City Apartment is newly renovated in the heart of
+          Budapest, right in the city center. Lorem ipsum dolor
+          sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua.
+          Ut enim ad minim veniam.
+        </p>
+      </section>
+      <div class="contact">Contact host</div>
+        <h2>
+          Amenities
+        </h2>
+      <div class="amenities">
+        <p>Elevator</p>
+        <p>Washer</p>
+        <p>Hair dryer</p>
+        <p>Kitchen</p>
+      </div>
+      <h3 class="all_amenities" ><a href="">Show All Amenities</a></h3>
+
+      <div class="reviews">
+        <h2>Reviews</h2>
+        <div class="review">
+          <div class="review__person">
+            <img src="./images/plase fore face.svg" alt="">
+            <div class="about-person">
+              <div class="review__person__name">John</div>
+              <div>September 2016</div>
+            </div>
+          </div>
+          <div class="review__text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit, sed do eiusmod tempor incididunt ut labore et
+            dolore magna aliqua. Ut enim ad minim veniam.
+          </div>
+        </div>
+        <div class="review">
+          <div class="review__person">
+            <img src="./images/plase fore face.svg" alt="">
+            <div class="about-person">
+              <div class="review__person__name">John</div>
+              <div>September 2016</div>
+            </div>
+          </div>
+          <div class="review__text">
+              Sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam.
+          </div>
+        </div>
+      </div>
+
+      <div class="hosted">
+        <h2>Hosted by Jane</h2>
+        <p>Budapest, Hungary</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+          sed do eiusmod tempor incididunt ut labore et magna aliqua.
+        </p>
+        <button class="contact-button">Contact Host</button>
+      </div>
+    </div>
+    <div>
+      <form class="order-form">
+        <div>25$ per night</div>
+        <input type="text" name="date" class="order-form__field date" placeholder="Date" onfocus="(this.type='date')" onblur="if(this.value==''){this.type='text'}">
+        <input type="number" name="numberOfGuest" class="order-form__field guests" placeholder="Guests">
+        <button class="order-form__button">Book</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <div class="first-foot-column">
+      <h3>Airbnb</h3>
+      <div><a href="">About</a> </div>
+      <div><a href="">Press</a> </div>
+      <div><a href="">Help</a> </div>
+    </div>
+    <div class="second-foot-column">
+      <h3>Discover</h3>
+      <div><a href="">Travel credit</a> </div>
+      <div><a href="">Business</a> </div>
+      <div><a href="">Guidebooks</a> </div>
+    </div>
+    <div class="third-foot-column">
+      <h3>Hosting</h3>
+      <div><a href="">Why host</a> </div>
+      <div><a href="">Hospitality</a> </div>
+      <div><a href="">Community</a> </div>
+    </div>
+  </footer>
+</body>
 </html>
