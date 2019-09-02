@@ -98,7 +98,7 @@ body {
     font-size: 36px;
     line-height: 42px;
     color: #3d4e61;
-    margin-bottom: 10px;
+    margin: 0 0 10px;
   }
 
   &__span span {
@@ -199,6 +199,7 @@ body {
     line-height: 22px;
     text-align: center;
     color: #118488;
+    background-color: #fff;
     border: 1px solid #118488;
     box-sizing: border-box;
     border-radius: 4px;
