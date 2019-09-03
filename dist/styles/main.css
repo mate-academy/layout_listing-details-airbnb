@@ -207,7 +207,7 @@ body {
   width: 270px;
   height: 50px;
   margin-bottom: 16px;
-  padding-left: 20px;
+  padding: 0 20px;
   cursor: pointer; }
 
 .form__guests {
@@ -218,7 +218,7 @@ body {
   width: 270px;
   height: 50px;
   margin-bottom: 24px;
-  padding-left: 16px;
+  padding: 0 20px;
   cursor: pointer; }
 
 .form__btn {

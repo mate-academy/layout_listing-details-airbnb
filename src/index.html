@@ -91,14 +91,16 @@
           <div class="main__container-form">
             <div class="form__rate text">25$ per night</div>
             <form action="booking-form">
-              <input class="form__date text" type="date" placeholder="Date">
-                <select  class="form__guests text">
+              <input class="form__date text" type="text" placeholder="Date" onfocus="(this.type='date')" onblur="(this.type='text')" name="date">
+
+              <input class="form__guests text" type="number" min="1" max="5" placeholder="Guests">
+                <!--<select  class="form__guests text">
                   <option>Guests</option>
                   <option>1</option>
                   <option>2</option>
                   <option>3</option>
                   <option>4</option>
-                </select>
+                </select>-->
               <input class="form__btn text" type="button" value="Book">
             </form>
           </div>
