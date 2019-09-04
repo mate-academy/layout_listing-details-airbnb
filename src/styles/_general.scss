@@ -22,9 +22,4 @@ body {
   &__bold {
     font-weight: bold;
   }
-  &__footer {
-    &:hover {
-      color: $c-green;
-    }
-  }
 }

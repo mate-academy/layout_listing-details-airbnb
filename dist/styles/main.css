@@ -24,8 +24,6 @@ body {
     color: #fd5c63; }
   .link-general__bold {
     font-weight: bold; }
-  .link-general__footer:hover {
-    color: #118488; }
 
 .page-header {
   padding-left: 25px;
@@ -56,7 +54,7 @@ body {
       -webkit-transform: translateY(3px);
               transform: translateY(3px); }
 
-.apart-picture {
+.apartament-picture {
   background-image: url(../images/apart-img.jpg);
   height: 464px;
   background-size: cover; }
@@ -141,7 +139,6 @@ body {
   .host__contact-button {
     color: #118488;
     text-decoration: none;
-    font-weight: bold;
     font-size: 16px;
     line-height: 22px;
     background-color: #fff;
@@ -208,6 +205,8 @@ body {
     color: #fff;
     margin-top: 24px;
     border-radius: 4px;
+    font-size: 16px;
+    line-height: 19px;
     border: none; }
     .booking-details__button:hover {
       background-color: #fff;

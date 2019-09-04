@@ -32,7 +32,7 @@
   }
 }
 
-.apart-picture {
+.apartament-picture {
   background-image: url(../images/apart-img.jpg);
   height: 464px;
   background-size: cover;
@@ -132,7 +132,6 @@
   &__contact-button {
     color: $c-green;
     text-decoration: none;
-    font-weight: bold;
     font-size: 16px;
     line-height: 22px;
     background-color: #fff;
@@ -184,6 +183,8 @@
     color: #fff;
     margin-top: 24px;
     border-radius: 4px;
+    font-size: 16px;
+    line-height: 19px;
     border: none;
 
     &:hover {
