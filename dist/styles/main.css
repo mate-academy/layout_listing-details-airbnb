@@ -69,7 +69,12 @@ a {
   color: #3d4e61; }
   .page__poster {
     width: 100%;
-    margin-bottom: 40px; }
+    margin-bottom: 40px;
+    position: fixed; }
+  .page__wrap-img {
+    height: 387px;
+    background-image: url(./../images/image.png);
+    background-attachment: fixed; }
   .page__container {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -216,8 +221,16 @@ a {
   width: 50px;
   height: 50px;
   border-radius: 40px;
-  background: #c4c4c4;
   display: inline-block; }
+
+.reviews .girl-1 {
+  background-image: url(./../images/girl.jpg);
+  background-size: 51px; }
+
+.reviews .girl-2 {
+  background-image: url(./../images/girl2.jpg);
+  background-size: 94px;
+  background-position-x: -24px; }
 
 .reviews__review-person-name {
   font-size: 20px;

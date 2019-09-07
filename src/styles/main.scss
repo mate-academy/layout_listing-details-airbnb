@@ -73,8 +73,13 @@ a {
   &__poster {
     width: 100%;
     margin-bottom: 40px;
+    position: fixed;
   }
-
+  &__wrap-img {
+    height: 387px;
+    background-image: url(./../images/image.png);
+    background-attachment: fixed;
+  }
   &__container {
     display: flex;
     justify-content: space-around;
@@ -224,38 +229,45 @@ a {
   }
 }
 
-.reviews___heading {
-  font-size: 28px;
-  line-height: 33px;
-  color: #3d4e61;
-}
+.reviews {
 
-.reviews__review-text {
-  font-size: 16px;
-  line-height: 23px;
-  color: #3d4e61;
-  margin-top: 23px;
-  height: 120px;
-}
-
-.reviews__review-person-img {
-  width: 50px;
-  height: 50px;
-  border-radius: 40px;
-  background: #c4c4c4;
-  display: inline-block;
-}
-
-.reviews__review-person-name {
-  font-size: 20px;
-  line-height: 27px;
-  color: #3d4e61;
-  font-weight: bold;
-}
-
-.reviews__review-cont {
-  display: inline-block;
-  margin-left: 21px;
+  &___heading {
+    font-size: 28px;
+    line-height: 33px;
+    color: #3d4e61;
+  }
+  &__review-text {
+    font-size: 16px;
+    line-height: 23px;
+    color: #3d4e61;
+    margin-top: 23px;
+    height: 120px;
+  }
+  &__review-person-img {
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    display: inline-block;
+  }
+  .girl-1 {
+    background-image: url(./../images/girl.jpg);
+    background-size: 51px;
+  }
+  .girl-2 {
+    background-image: url(./../images/girl2.jpg);
+    background-size: 94px;
+    background-position-x: -24px;
+  }
+  &__review-person-name {
+    font-size: 20px;
+    line-height: 27px;
+    color: #3d4e61;
+    font-weight: bold;
+  }
+  &__review-cont {
+    display: inline-block;
+    margin-left: 21px;
+  }
 }
 
 .who-hosted-heading {
