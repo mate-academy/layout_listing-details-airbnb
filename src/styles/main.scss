@@ -38,12 +38,21 @@ a {
     text-decoration: none;
     margin-right: 30px;
     font-weight: bold;
+    & a {
+      display: block;
+      transition: transform 0.15s,
+        color 0.25s;
+      &:hover {
+        color: #118488;
+        transform: scale(1.08);
+      }
+    }
   }
 
   &__menu {
     height: 60px;
     display: flex;
-    padding-top: 10px;
+    padding-top: 14px;
     margin-right: 20px;
   }
 
@@ -96,7 +105,7 @@ a {
     list-style-type: none;
     display: flex;
     padding-left: 0;
-    margin-bottom: 28px;
+    margin: 28px 0;
   }
 
   &__text {
@@ -108,12 +117,18 @@ a {
   }
 
   &__contact-h {
-    display: block;
+    display: inline-block;
     font-size: 16px;
     line-height: 19px;
     color: #3d4e61;
     margin-bottom: 44px;
     font-weight: bold;
+    transition: transform 0.15s,
+      color 0.25s;
+    &:hover {
+      color: #118488;
+      transform: scale(1.08);
+    }
   }
 }
 
@@ -158,7 +173,7 @@ a {
     color: white;
     display: block;
     text-align: center;
-    padding-top: 12px;
+    padding-top: 14px;
     text-decoration: none;
     transition: background 0.5s, color 0.5s, border 0.5s;
 
@@ -198,7 +213,14 @@ a {
     font-weight: bold;
     color: #3d4e61;
     margin-bottom: 66px;
-    display: block;
+    display: inline-block;
+    margin-top: 30px;
+    transition: transform 0.15s,
+      color 0.25s;
+    &:hover {
+      color: #118488;
+      transform: scale(1.08);
+    }
   }
 }
 
@@ -270,7 +292,7 @@ a {
   border-radius: 5px;
   border: 1px solid #118488;
   box-sizing: border-box;
-  padding-top: 12px;
+  padding-top: 14px;
   margin-bottom: 75px;
   margin-top: 30px;
   transition: background 0.5s, color 0.5s, border 0.5s;
@@ -288,7 +310,29 @@ a {
   justify-content: space-around ;
   background: #fff;
   box-shadow: 0 -1px 0 #e1e7ed;
+  &__span {
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3d4e61;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
 
+  &__link {
+    display: block;
+    font-size: 16px;
+    line-height: 19px;
+    color: #3d4e61;
+    text-decoration: none;
+    margin-bottom: 9px;
+    transition: transform 0.15s,
+      color 0.25s;
+    &:hover {
+      color: #118488;
+      transform: scale(1.08);
+    }
+  }
   .section {
     list-style-type: none;
     font-size: 16px;
@@ -298,22 +342,4 @@ a {
       margin-bottom: 9px;
     }
   }
-}
-
-.bottom a,
-.bottom span {
-  display: block;
-  font-size: 16px;
-  line-height: 19px;
-  color: #3d4e61;
-}
-
-.bottom a {
-  text-decoration: none;
-  margin-bottom: 9px;
-}
-
-.bottom span {
-  font-weight: bold;
-  margin-bottom: 20px;
 }
