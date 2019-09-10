@@ -16,6 +16,7 @@
   &__list-item--link {
     text-decoration: none;
     color: #3d4e61;
+    transition: 0.3s;
 
     &:hover {
       color: #fd5c63;
