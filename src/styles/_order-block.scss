@@ -24,6 +24,7 @@
     box-sizing: border-box;
     border-radius: 3px;
     padding-left: 17px;
+    font-size: 16px;
 
     &::placeholder {
       color: #3d4e61;
@@ -41,15 +42,19 @@
   &__button {
     width: 268px;
     height: 50px;
-    background: #fd5c63;
+    background-color: #fd5c63;
     color: #fff;
     border-radius: 4px;
     border: none;
     box-sizing: border-box;
     cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
 
     &:hover {
-      opacity: 0.9;
+      background-color: #fff;
+      color: #fd5c63;
+      border: 1px solid #fd5c63;
     }
   }
 }

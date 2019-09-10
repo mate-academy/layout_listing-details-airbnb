@@ -11,10 +11,14 @@
 
   &__list {
     list-style: none;
+  }
 
-    &-item--link {
-      text-decoration: none;
-      color: #3d4e61;
+  &__list-item--link {
+    text-decoration: none;
+    color: #3d4e61;
+
+    &:hover {
+      color: #fd5c63;
     }
   }
 

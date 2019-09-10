@@ -47,5 +47,11 @@
 
   &__more-items {
     font-weight: 700;
+    color: #3d4e61;
+    text-decoration: none;
+
+    &:hover {
+      color: #fd5c63;
+    }
   }
 }
