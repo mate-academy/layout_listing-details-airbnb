@@ -67,10 +67,6 @@ a {
 
 .page {
   color: #3d4e61; }
-  .page__poster {
-    width: 100%;
-    margin-bottom: 40px;
-    position: fixed; }
   .page__wrap-img {
     height: 387px;
     background-image: url(./../images/image.png);
@@ -103,6 +99,9 @@ a {
     display: flex;
     padding-left: 0;
     margin: 28px 0; }
+    .page__characteristics li {
+      width: 81px;
+      margin-right: 12px; }
   .page__text {
     font-size: 16px;
     line-height: 24px;
@@ -133,7 +132,8 @@ a {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 3px;
-  padding: 30px 30px 38px; }
+  padding: 30px 30px 38px;
+  margin-top: 39px; }
   .form__input {
     outline-color: #fd5c63;
     width: 270px;
