@@ -1,0 +1,97 @@
+.section {
+  display: flex;
+  padding: 0 calc(50% - 450px);
+  justify-content: space-between;
+
+  .heading {
+    font-size: 36px;
+    color: #3D4E61;
+  }
+}
+
+.apartment {
+  margin-top: -410px;
+
+  .heading {
+    margin: 40px 0;
+  }
+
+  .entire__apartment {
+    margin-top: 5px;
+    font-size: 16px;
+    line-height: 19px;
+    color: #687C94;
+  }
+
+  .apartment__info {
+    font-size: 16px;
+    line-height: 24px;
+    color: #3D4E61;
+  }
+
+  .contact {
+    font-size: 16px;
+    line-height: 19px;
+    color: #3D4E61;
+  }
+
+  &-item {
+    margin-right: 20px;
+  }
+}
+
+.form {
+  position: sticky;
+  top: 50px;
+  left: 800px;
+  bottom: 800px;
+  margin: 40px 0;
+  box-sizing: border-box;
+  padding: 30px;
+  width: 319px;
+  height: 333px;
+  background: #FFFFFF;
+  border: 1px solid #E1E7ED;
+  border-radius: 3px;
+  display: flex;
+  flex-direction: column;
+
+  .cost__night {
+    margin: 0 0 39px 0;
+    font-size: 18px;
+    line-height: 19px;
+    color: #3D4E61;
+  }
+
+  &__input, &__button {
+    padding: 15px 13px;
+    box-sizing: border-box;
+    margin-bottom: 16px;
+    width: 257px;
+    height: 50px;
+    border: 1px solid #E1E7ED;
+    box-sizing: border-box;
+    border-radius: 3px;
+    font-size: 16px;
+    line-height: 19px;
+  }
+
+  &__button {
+    margin-top: 24px;
+    background: #FD5C63;
+    border-radius: 4px;
+    font-size: 16px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+
+    &::placeholder {
+      color: #3D4E61;
+    }
+
+    &:hover {
+      background: rgb(190, 33, 46);
+      transition: 0.5s;
+    }
+  }
+}

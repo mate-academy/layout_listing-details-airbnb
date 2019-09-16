@@ -1,7 +1,8 @@
-@import "utils";
 @import "fonts";
-@import "typography";
+@import "header";
+@import "apartment__info";
+@import "amenitis";
+@import "profile";
+@import "footer";
+@import "adaptive";
 
-body {
-  background: $c-gray;
-}

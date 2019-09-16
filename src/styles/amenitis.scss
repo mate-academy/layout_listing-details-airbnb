@@ -1,0 +1,33 @@
+.amenitis {
+  display: flex;
+
+  &__item_2 {
+    margin-top: 47px;
+  }
+
+}
+.ttt {
+  position: relative;
+}
+    #hider {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+
+    #hider:checked + .content {
+      display: block;
+    }
+
+    #clickme {
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 19px;
+      color: #3D4E61;
+    }
+
+    .content {
+      display: flex;
+      margin-top: 10px;
+      display: none;
+    }
