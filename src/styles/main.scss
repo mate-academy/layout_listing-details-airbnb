@@ -1,7 +1,8 @@
 @import "utils";
 @import "fonts";
-@import "typography";
 
 body {
-  background: $c-gray;
+  font-family: "Avenir-Medium", sans-serif;
+  font-weight: 300;
+  color: #3d4e61;
 }
