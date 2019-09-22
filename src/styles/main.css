@@ -81,9 +81,8 @@ body {
 
 .form {
   position: sticky;
-  top: 50px;
+  top: 150px;
   left: calc(50% + 101px);
-  bottom: 800px;
   margin: 40px 0;
   box-sizing: border-box;
   padding: 30px;
@@ -228,10 +227,20 @@ body {
   font-weight: 600;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .section {
     flex-direction: column;
     margin: 0 20px;
+  }
+
+  .form {
+    top: 20px;
+    position: relative;
+    left: 50px;
+  }
+
+  .apartment {
+    margin-top: 0;
   }
 }
 

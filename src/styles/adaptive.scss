@@ -1,6 +1,16 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   .section {
     flex-direction: column;
     margin: 0 20px;
+  }
+
+  .form {
+    top: 20px;
+    position: relative;
+    left: 50px;
+  }
+
+  .apartment {
+    margin-top: 0;
   }
 }
