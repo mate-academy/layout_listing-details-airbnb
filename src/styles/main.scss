@@ -1,7 +1,255 @@
-@import "utils";
-@import "fonts";
-@import "typography";
 
+@mixin formInput {
+      width: 257px;
+      height: 50px;
+      outline: none;
+      box-sizing: border-box;
+      font-size: 16px;
+      line-height: 22px;
+}
+
+@mixin smallHeading {
+  font-weight: bolder;
+}
+
+@font-face {
+ font-family: "Avenir-Book";
+ src: local("Avenir Book"),
+   local("Avenir-Book"),
+   url("../fonts/book/Avenir-Book.woff2") format("woff2"),
+   url("../fonts/book/Avenir-Book.woff") format("woff"),
+   url("../fonts/book/Avenir-Book.ttf") format("truetype");
+}
+
+@font-face {
+ font-family: "Avenir-Heavy";
+ src: local("Avenir Heavy"),
+   local("Avenir-Heavy"),
+   url("../fonts/book/Avenir-Heavy.woff2") format("woff2"),
+   url("../fonts/book/Avenir-Heavy.woff") format("woff"),
+   url("../fonts/book/Avenir-Heavy.ttf") format("truetype");
+}
 body {
-  background: $c-gray;
+  margin: 0;
+  font-family: "Avenir-Heavy", sans-serif;
+}
+.header {
+  & .logo-bar {
+    padding: 26px 15px 19px;
+    display: flex;
+    justify-content: space-between;
+    & .logo {
+      height: 30px;
+      width: 30px;
+    }
+    & .logo-bar-nav {
+      display: flex;
+      justify-content: space-between;
+      & .logo-bar-image {
+        object-fit: cover;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+      }
+      & a {
+        text-decoration: none;
+        color: #3d4e61;
+        font-style: "Heavy";
+        font-size: 16px;
+        padding-right: 40px;
+      }
+    }
+  }
+  & .banner {
+    background-image: url(../images/main-photo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 464px;
+  }
+}
+.main {
+  padding: 40px calc(50% - 451px) 25px;
+  display: flex;
+  justify-content: space-between;
+  & .apartment {
+    color: #3d4e61;
+    max-width: 492px;
+    & .sec-head {
+      font-size: 36px;
+      line-height: 42px;
+
+    }
+    & .sub-head {
+      font-size: 16px;
+      line-height: 19px;
+      color: #687c94;
+    }
+    & .host-button{
+      width: 150px;
+      height: 50px;
+      outline: none;
+      font-size: 16px;
+      color: #118488;
+      background-color: white;
+      border: 1px solid #118488;
+      box-sizing: border-box;
+      border-radius: 4px;
+    }
+    & .apart-details {
+      display: flex;
+      & p {
+        padding-right: 82px;
+        font-size: 16px;
+        line-height: 19px;
+        color: #3d4e61;
+      }
+    }
+    & .apart-info {
+      font-size: 16px;
+      line-height: 24px;
+      color: #3d4e61;
+    }
+    & .contact-host{
+      @include smallHeading;
+    }
+    & .amenity-head{
+      @include smallHeading;
+    }
+    & .facilities span{
+      margin-left: 120px;
+    }
+    & .show-all{
+      @include smallHeading;
+    }
+  }
+  & form{
+    height: 330px;
+    width: 319px;
+    padding: 30px 30px 38px;
+    box-sizing: border-box;
+    border: 1px solid #E1E7ED;
+    border-radius: 3px;
+
+    & .price{
+      font-size: 16px;
+      line-height: 22px;
+      color: #3D4E61;
+    }
+    & input{
+      @include formInput;
+      border-radius: 3px;
+      border: 1px solid #E1E7ED;
+      padding: 14px 17px;
+      margin-bottom: 16px;
+    }
+  }
+  & .form-button{
+     @include formInput;
+     border-radius: 4px;
+     background: #FD5C63;
+     border: 1px solid #FD5C63;
+     color: white;
+     margin-top: 8px;
+  }
+  & .review{
+    & .rev-block{
+      position: relative;
+      &::before{
+      content: "";
+      height: 50px;
+      width: 50px;
+      border-radius: 50%;
+      background-image: url(../images/headshot.jpg);
+      position: absolute;
+    }
+    & .name{
+      padding-left: 80px;
+      font-weight: bolder;
+    }
+    & .date{
+      padding-left: 80px;
+    }
+  }
+  }
+}
+
+.foot{
+  background: #FFFFFF;
+  box-shadow: 0px -1px 0px #E1E7ED;
+  border: 1px solid  #E1E7ED;
+  padding: 40px calc(50% - 451px) 25px;
+  display: flex;
+  & .foot-nav{
+    list-style: none;
+    padding: 0;
+    margin-right: 300px;
+    & .bnb-items{
+      margin-bottom: 15px;
+      & a{
+        &.link-head{
+        display: block;
+        font-weight: bolder;
+        margin-bottom: 30px;
+      }
+      text-decoration: none;
+      font-size: 16px;
+      color:  #3D4E61;
+    }
+  }
+  }
+}
+
+@media screen and (max-width: 950px){
+  .logo{
+    margin-bottom: 40px;
+  }
+  .header {
+    & .banner{
+    height: 100px;
+  }
+  & .logo-bar{
+  & .logo-bar-nav{
+    flex-direction: column;
+    align-items: center;
+    & a{
+      padding: 0;
+      margin-bottom: 10px;
+    }
+  }
+}
+  }
+  .main{
+    padding: 0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    & .apartment{
+    padding: 0 20px;
+    margin-bottom: 40px;
+    & .apart-details p{
+    padding: 0 20px;
+  }
+
+  }
+  }
+  .rev-block::before{
+   left: 60px;
+  }
+
+  form{
+    margin-bottom: 40px;
+  }
+
+  .logo-bar{
+    flex-direction: column;
+    align-items: center;
+  }
+
+   .foot{
+     flex-direction: column;
+     align-items: center;
+     & .foot-nav{
+       margin: 0 0 30px 0;
+     }
+   }
 }

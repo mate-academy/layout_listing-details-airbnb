@@ -1,0 +1,303 @@
+@font-face {
+  font-family: "Avenir-Book";
+  src: local("Avenir Book"), local("Avenir-Book"), url("../fonts/book/Avenir-Book.woff2") format("woff2"), url("../fonts/book/Avenir-Book.woff") format("woff"), url("../fonts/book/Avenir-Book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: local("Avenir Heavy"), local("Avenir-Heavy"), url("../fonts/book/Avenir-Heavy.woff2") format("woff2"), url("../fonts/book/Avenir-Heavy.woff") format("woff"), url("../fonts/book/Avenir-Heavy.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: "Avenir-Heavy", sans-serif;
+}
+
+.header .logo-bar {
+  padding: 26px 15px 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .logo-bar .logo {
+  height: 30px;
+  width: 30px;
+}
+
+.header .logo-bar .logo-bar-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header .logo-bar .logo-bar-nav .logo-bar-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.header .logo-bar .logo-bar-nav a {
+  text-decoration: none;
+  color: #3d4e61;
+  font-style: "Heavy";
+  font-size: 16px;
+  padding-right: 40px;
+}
+
+.header .banner {
+  background-image: url(../images/main-photo.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 464px;
+}
+
+.main {
+  padding: 40px calc(50% - 451px) 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .apartment {
+  color: #3d4e61;
+  max-width: 492px;
+}
+
+.main .apartment .sec-head {
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.main .apartment .sub-head {
+  font-size: 16px;
+  line-height: 19px;
+  color: #687c94;
+}
+
+.main .apartment .host-button {
+  width: 150px;
+  height: 50px;
+  outline: none;
+  font-size: 16px;
+  color: #118488;
+  background-color: white;
+  border: 1px solid #118488;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.main .apartment .apart-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .apartment .apart-details p {
+  padding-right: 82px;
+  font-size: 16px;
+  line-height: 19px;
+  color: #3d4e61;
+}
+
+.main .apartment .apart-info {
+  font-size: 16px;
+  line-height: 24px;
+  color: #3d4e61;
+}
+
+.main .apartment .contact-host {
+  font-weight: bolder;
+}
+
+.main .apartment .amenity-head {
+  font-weight: bolder;
+}
+
+.main .apartment .facilities span {
+  margin-left: 120px;
+}
+
+.main .apartment .show-all {
+  font-weight: bolder;
+}
+
+.main form {
+  height: 330px;
+  width: 319px;
+  padding: 30px 30px 38px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #E1E7ED;
+  border-radius: 3px;
+}
+
+.main form .price {
+  font-size: 16px;
+  line-height: 22px;
+  color: #3D4E61;
+}
+
+.main form input {
+  width: 257px;
+  height: 50px;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 3px;
+  border: 1px solid #E1E7ED;
+  padding: 14px 17px;
+  margin-bottom: 16px;
+}
+
+.main .form-button {
+  width: 257px;
+  height: 50px;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  line-height: 22px;
+  border-radius: 4px;
+  background: #FD5C63;
+  border: 1px solid #FD5C63;
+  color: white;
+  margin-top: 8px;
+}
+
+.main .review .rev-block {
+  position: relative;
+}
+
+.main .review .rev-block::before {
+  content: "";
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-image: url(../images/headshot.jpg);
+  position: absolute;
+}
+
+.main .review .rev-block .name {
+  padding-left: 80px;
+  font-weight: bolder;
+}
+
+.main .review .rev-block .date {
+  padding-left: 80px;
+}
+
+.foot {
+  background: #FFFFFF;
+  -webkit-box-shadow: 0px -1px 0px #E1E7ED;
+          box-shadow: 0px -1px 0px #E1E7ED;
+  border: 1px solid  #E1E7ED;
+  padding: 40px calc(50% - 451px) 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.foot .foot-nav {
+  list-style: none;
+  padding: 0;
+  margin-right: 300px;
+}
+
+.foot .foot-nav .bnb-items {
+  margin-bottom: 15px;
+}
+
+.foot .foot-nav .bnb-items a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #3D4E61;
+}
+
+.foot .foot-nav .bnb-items a.link-head {
+  display: block;
+  font-weight: bolder;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 950px) {
+  .logo {
+    margin-bottom: 40px;
+  }
+  .header .banner {
+    height: 100px;
+  }
+  .header .logo-bar .logo-bar-nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header .logo-bar .logo-bar-nav a {
+    padding: 0;
+    margin-bottom: 10px;
+  }
+  .main {
+    padding: 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+  }
+  .main .apartment {
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+  .main .apartment .apart-details p {
+    padding: 0 20px;
+  }
+  .rev-block::before {
+    left: 60px;
+  }
+  form {
+    margin-bottom: 40px;
+  }
+  .logo-bar {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .foot {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .foot .foot-nav {
+    margin: 0 0 30px 0;
+  }
+}
+/*# sourceMappingURL=main.css.map */
