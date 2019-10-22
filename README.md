@@ -1,12 +1,12 @@
 # Listing details for Airbnb
 
 ## Main goal:
-Create HTML page with listing details. 
+Create HTML page with listing details.
 
-Use this [mockup](https://www.figma.com/file/MUTaFua1Aaf2kAmfwLUPnswr/AirBnB%3A-Listing-details?node-id=0%3A1) 
+Use this [mockup](https://www.figma.com/file/MUTaFua1Aaf2kAmfwLUPnswr/AirBnB%3A-Listing-details?node-id=0%3A1)
 for development.
 
-If you don't want to see other users cursors you can disable `Multiplayer 
+If you don't want to see other users cursors you can disable `Multiplayer
 Cursors` in figma. [Learn how](https://mate-academy.github.io/layout_task-guideline/figma.html#multiplayer-cursors)
 
 ## Common mistakes
@@ -24,10 +24,7 @@ Cursors` in figma. [Learn how](https://mate-academy.github.io/layout_task-guidel
 * use `@font-face` for fonts
 
 ---
-**Read the guideline before start**
-
-[Guideline](https://github.com/mate-academy/layout_task-guideline/blob/master/README.md)
 
 **Result**
 
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
++ [DEMO LINK](https://frucelestine.github.io/layout_listing-details-airbnb/)
