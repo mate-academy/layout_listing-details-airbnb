@@ -1,0 +1,27 @@
+.footer {
+  margin-top: 75px;
+  background: #ffffff;
+  box-shadow: 0px -1px 0px #e1e7ed;
+  border: 1px solid #e1e7ed;
+  padding: 40px calc(50% - 451px) 25px;
+  display: flex;
+  justify-content: space-between;
+  & .foot-nav {
+    list-style: none;
+    padding: 0;
+    & .bnb-items {
+      margin-bottom: 15px;
+      & a {
+        cursor: pointer;
+        font-size: 20px;
+        text-decoration: none;
+        color: #3d4e61;
+        &.link-head {
+          display: block;
+          font-family: 'Avenir-Heavy';
+          margin-bottom: 30px;
+        }
+      }
+    }
+  }
+}
