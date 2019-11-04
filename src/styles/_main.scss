@@ -35,10 +35,11 @@
       border: 1px solid #118488;
       box-sizing: border-box;
       border-radius: 4px;
+      transition: background-color 1s;
       &:hover{
         box-shadow: 2px 2px 2px rgb(54, 54, 19);
         background-color: chartreuse;
-        transform: scale(1.1, 1.1);
+        transform: scale(2, 2);
       }
     }
     & .apart-details {
@@ -98,6 +99,7 @@
     border: 1px solid #fd5c63;
     color: white;
     margin-top: 8px;
+    transition: background-color 1s;
     &:hover{
       box-shadow: 2px 2px 2px rgb(77, 51, 51);
       background-color: chocolate;
