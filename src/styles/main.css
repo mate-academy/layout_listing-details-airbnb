@@ -14,7 +14,12 @@ body {
 }
 
 .logo-bar {
-  position: relative;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 0px #E1E7ED;
+          box-shadow: 0px 1px 0px #E1E7ED;
   padding: 26px 15px 19px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,6 +36,7 @@ body {
 }
 
 .logo-bar .logo-bar-nav {
+  margin-right: 20px;
   font-family: 'Avenir-Heavy';
   display: -webkit-box;
   display: -ms-flexbox;
@@ -127,6 +133,14 @@ body {
   border-radius: 4px;
 }
 
+.main .apartment .host-button:hover {
+  -webkit-box-shadow: 2px 2px 2px #363613;
+          box-shadow: 2px 2px 2px #363613;
+  background-color: chartreuse;
+  -webkit-transform: scale(1.1, 1.1);
+          transform: scale(1.1, 1.1);
+}
+
 .main .apartment .apart-details {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -208,6 +222,12 @@ body {
   border: 1px solid #fd5c63;
   color: white;
   margin-top: 8px;
+}
+
+.main .form-button:hover {
+  -webkit-box-shadow: 2px 2px 2px #4d3333;
+          box-shadow: 2px 2px 2px #4d3333;
+  background-color: chocolate;
 }
 
 .main .review .rev-block {
