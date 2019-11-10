@@ -1,0 +1,390 @@
+@font-face {
+  font-family: "Avenir-Book";
+  src: local("Avenir Book"), local("Avenir-Book"), url("../fonts/book/Avenir-Book.woff2") format("woff2"), url("../fonts/book/Avenir-Book.woff") format("woff"), url("../fonts/book/Avenir-Book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: local("Avenir Heavy"), local("Avenir-Heavy"), url("../fonts/heavy/Avenir-Heavy.woff2") format("woff2"), url("../fonts/heavy/Avenir-Heavy.woff") format("woff"), url("../fonts/heavy/Avenir-Heavy.ttf") format("truetype");
+}
+
+body {
+  margin: 0;
+  font-family: "Avenir-book", sans-serif;
+}
+
+.logo-bar {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  -webkit-box-shadow: 0px 1px 0px #E1E7ED;
+          box-shadow: 0px 1px 0px #E1E7ED;
+  padding: 26px 15px 19px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.logo-bar .logo {
+  z-index: 999;
+  height: 30px;
+  width: 30px;
+}
+
+.logo-bar .logo-bar-nav {
+  margin-right: 20px;
+  font-family: 'Avenir-Heavy';
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.logo-bar .logo-bar-nav .logo-bar-image {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+}
+
+.logo-bar .logo-bar-nav a {
+  text-decoration: none;
+  color: #3d4e61;
+  font-size: 20px;
+  padding-right: 40px;
+}
+
+.burger {
+  margin-right: 20px;
+  cursor: pointer;
+  z-index: 999;
+  display: none;
+}
+
+.burger div {
+  width: 25px;
+  height: 4px;
+  margin: 4px;
+  border-radius: 2px;
+  background-color: black;
+}
+
+.banner img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 464px;
+}
+
+.main {
+  font-size: 20px;
+  padding: 40px calc(50% - 451px) 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main .apartment {
+  color: #3d4e61;
+  max-width: 492px;
+}
+
+.main .apartment .sec-head {
+  font-family: 'Avenir-Heavy';
+  font-size: 36px;
+  line-height: 42px;
+  font-weight: 700;
+}
+
+.main .apartment .host .host.info {
+  margin-bottom: 40px;
+}
+
+.main .apartment .sub-head {
+  line-height: 19px;
+  color: #687c94;
+}
+
+.main .apartment .host-button {
+  width: 150px;
+  height: 50px;
+  font-family: 'Avenir-HEavy';
+  padding: 15px 27px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #118488;
+  background-color: white;
+  border: 1px solid #118488;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  -webkit-transition: background-color 0.5s, color 0.5s;
+  transition: background-color 0.5s, color 0.5s;
+}
+
+.main .apartment .host-button:hover {
+  -webkit-box-shadow: 2px 2px 2px #363613;
+          box-shadow: 2px 2px 2px #363613;
+  background-color: #118488;
+  color: whitesmoke;
+  -webkit-transform: scale(2, 2);
+          transform: scale(2, 2);
+}
+
+.main .apartment .apart-details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.main .apartment .apart-details span {
+  padding-right: 82px;
+  line-height: 19px;
+  color: #3d4e61;
+}
+
+.main .apartment .apart-info {
+  margin-bottom: 40px;
+  color: #3d4e61;
+}
+
+.main .apartment .contact-host {
+  font-weight: bolder;
+  text-decoration: none;
+  color: inherit;
+}
+
+.main .apartment .amenity-head {
+  font-weight: bolder;
+}
+
+.main .apartment .facilities span {
+  margin-left: 120px;
+}
+
+.main .apartment .show-all {
+  font-weight: bolder;
+}
+
+.main .booking {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 70px;
+  height: 330px;
+  width: 319px;
+  padding: 30px 30px 38px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #e1e7ed;
+  border-radius: 3px;
+}
+
+.main .booking .price {
+  line-height: 22px;
+  color: #3d4e61;
+}
+
+.main .booking input {
+  width: 257px;
+  height: 50px;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+  line-height: 22px;
+  border-radius: 3px;
+  border: 1px solid #e1e7ed;
+  padding: 14px 17px;
+  margin-bottom: 16px;
+}
+
+.main .form-button {
+  cursor: pointer;
+  width: 257px;
+  height: 50px;
+  outline: none;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 20px;
+  line-height: 22px;
+  border-radius: 4px;
+  background: #fd5c63;
+  border: 1px solid #fd5c63;
+  color: white;
+  margin-top: 8px;
+  -webkit-transition: background-color 1s;
+  transition: background-color 1s;
+}
+
+.main .form-button:hover {
+  -webkit-box-shadow: 2px 2px 2px #4d3333;
+          box-shadow: 2px 2px 2px #4d3333;
+  background-color: chocolate;
+}
+
+.main .review .rev-block {
+  margin-bottom: 40px;
+  position: relative;
+}
+
+.main .review .rev-block::before {
+  content: "";
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-image: url(../images/headshot.jpg);
+  background-size: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
+  position: absolute;
+}
+
+.main .review .rev-block .name {
+  padding-left: 80px;
+  font-weight: bolder;
+}
+
+.main .review .rev-block .date {
+  padding-left: 80px;
+}
+
+.footer {
+  margin-top: 75px;
+  background: #ffffff;
+  -webkit-box-shadow: 0px -1px 0px #e1e7ed;
+          box-shadow: 0px -1px 0px #e1e7ed;
+  border: 1px solid #e1e7ed;
+  padding: 40px calc(50% - 451px) 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer .foot-nav {
+  list-style: none;
+  padding: 0;
+}
+
+.footer .foot-nav .bnb-items {
+  margin-bottom: 15px;
+}
+
+.footer .foot-nav .bnb-items a {
+  cursor: pointer;
+  font-size: 20px;
+  text-decoration: none;
+  color: #3d4e61;
+}
+
+.footer .foot-nav .bnb-items a.link-head {
+  display: block;
+  font-family: 'Avenir-Heavy';
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 950px) {
+  .header .logo {
+    z-index: 999;
+  }
+  .header .logo-bar {
+    position: fixed;
+    width: 100%;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 10px;
+    z-index: 10;
+  }
+  .header .logo-bar-nav {
+    position: absolute;
+    -webkit-transform: translateY(-150%);
+            transform: translateY(-150%);
+    height: 100px;
+    width: 100%;
+    left: 0;
+    margin-top: 50px;
+    text-align: center;
+    background-color: lightblue;
+    border-radius: 6px solid lightblue;
+    display: block;
+    -webkit-transition: -webkit-transform 0.5s ease-in-out;
+    transition: -webkit-transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out, -webkit-transform 0.5s ease-in-out;
+  }
+  .header .logo-bar-nav a {
+    display: block;
+    padding: 0;
+    margin: 0;
+  }
+  .header .logo-bar-nav .logo-bar-image {
+    display: none;
+  }
+  .header .logo-bar-active {
+    -webkit-transform: translateY(0%);
+            transform: translateY(0%);
+  }
+  .main {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    text-align: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .main .apartment {
+    padding: 0 20px;
+    margin-bottom: 40px;
+  }
+  .main .apartment .apart-details span {
+    padding: 0 20px;
+  }
+  .burger {
+    display: block;
+  }
+  .toggler .burger1 {
+    -webkit-transform: rotate(45deg) translate(7px, 0);
+            transform: rotate(45deg) translate(7px, 0);
+  }
+  .toggler .burger2 {
+    opacity: 0;
+  }
+  .toggler .burger3 {
+    -webkit-transform: rotate(-45deg) translate(12px, -4px);
+            transform: rotate(-45deg) translate(12px, -4px);
+  }
+  .rev-block::before {
+    left: 60px;
+  }
+  .booking {
+    margin-bottom: 40px;
+  }
+  .logo-bar {
+    background-color: lightblue;
+    height: 40px;
+    padding: 20px;
+  }
+  .footer {
+    padding: 0 5px;
+    margin: 0 0 30px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

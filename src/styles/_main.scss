@@ -1,0 +1,132 @@
+.main {
+  font-size: 20px;
+  padding: 40px calc(50% - 451px) 25px;
+  display: flex;
+  justify-content: space-between;
+  & .apartment {
+    color: #3d4e61;
+    max-width: 492px;
+    & .sec-head {
+      font-family: 'Avenir-Heavy';
+      font-size: 36px;
+      line-height: 42px;
+      font-weight: 700;
+    }
+    & .host{
+      & .host.info{
+        margin-bottom: 40px;
+      }
+
+    }
+    & .sub-head {
+      line-height: 19px;
+      color: #687c94;
+    }
+
+    & .host-button {
+      width: 150px;
+      height: 50px;
+      font-family: 'Avenir-HEavy';
+      padding: 15px 27px;
+      text-decoration: none;
+      font-size: 20px;
+      color: #118488;
+      background-color: white;
+      border: 1px solid #118488;
+      box-sizing: border-box;
+      border-radius: 4px;
+      transition: background-color 0.5s, color 0.5s;
+      &:hover{
+        box-shadow: 2px 2px 2px rgb(54, 54, 19);
+        background-color: #118488;
+        color: whitesmoke;
+        transform: scale(2, 2);
+      }
+    }
+    & .apart-details {
+      display: flex;
+      & span {
+        padding-right: 82px;
+        line-height: 19px;
+        color: #3d4e61;
+      }
+    }
+    & .apart-info {
+      margin-bottom: 40px;
+      color: #3d4e61;
+    }
+    & .contact-host {
+      @include smallHeading;
+      text-decoration: none;
+      color: inherit;
+    }
+    & .amenity-head {
+      @include smallHeading;
+    }
+    & .facilities span {
+      margin-left: 120px;
+    }
+    & .show-all {
+      @include smallHeading;
+    }
+  }
+  & .booking {
+    position: sticky;
+    top: 70px;
+    height: 330px;
+    width: 319px;
+    padding: 30px 30px 38px;
+    box-sizing: border-box;
+    border: 1px solid #e1e7ed;
+    border-radius: 3px;
+
+    & .price {
+      line-height: 22px;
+      color: #3d4e61;
+    }
+    & input {
+      @include formInput;
+      border-radius: 3px;
+      border: 1px solid #e1e7ed;
+      padding: 14px 17px;
+      margin-bottom: 16px;
+    }
+  }
+  & .form-button {
+    cursor: pointer;
+    @include formInput;
+    border-radius: 4px;
+    background: #fd5c63;
+    border: 1px solid #fd5c63;
+    color: white;
+    margin-top: 8px;
+    transition: background-color 1s;
+    &:hover{
+      box-shadow: 2px 2px 2px rgb(77, 51, 51);
+      background-color: chocolate;
+    }
+  }
+  & .review {
+    & .rev-block {
+      margin-bottom: 40px;
+      position: relative;
+      &::before {
+        content: "";
+        height: 50px;
+        width: 50px;
+        border-radius: 50%;
+        background-image: url(../images/headshot.jpg);
+        background-size: cover;
+        object-fit: cover;
+        position: absolute;
+      }
+      & .name {
+        padding-left: 80px;
+        font-weight: bolder;
+      }
+      & .date {
+        padding-left: 80px;
+      }
+    }
+  }
+}

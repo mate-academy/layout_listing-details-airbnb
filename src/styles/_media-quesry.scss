@@ -1,0 +1,85 @@
+@media screen and (max-width: 950px) {
+  .header {
+    .logo{
+      z-index: 999;
+    }
+    & .logo-bar {
+      position: fixed;
+      width: 100%;
+      justify-content: space-between;
+      padding: 10px;
+      z-index: 10;
+    }
+
+    .logo-bar-nav {
+      position: absolute;
+        transform: translateY(-150%);
+        height: 100px;
+        width: 100%;
+        left: 0;
+        margin-top: 50px;
+        text-align: center;
+        background-color: lightblue;
+        border-radius: 6px solid lightblue;
+        display: block;
+        transition: transform 0.5s ease-in-out;
+        & a {
+          display: block;
+          padding: 0;
+         margin: 0;
+        }
+        & .logo-bar-image{
+          display: none;
+        }
+      }
+
+      .logo-bar-active{
+      transform: translateY(0%);
+    }
+
+  }
+  .main {
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    & .apartment {
+      padding: 0 20px;
+      margin-bottom: 40px;
+      & .apart-details span {
+        padding: 0 20px;
+      }
+    }
+  }
+  .burger {
+    display: block;
+  }
+
+  .toggler .burger1 {
+    transform: rotate(45deg) translate(7px, 0);
+  }
+  .toggler .burger2 {
+    opacity: 0;
+  }
+  .toggler .burger3 {
+    transform: rotate(-45deg) translate(12px, -4px);
+  }
+  .rev-block::before {
+    left: 60px;
+  }
+
+  .booking {
+    margin-bottom: 40px;
+  }
+
+  .logo-bar {
+    background-color: lightblue;
+    height: 40px;
+    padding: 20px;
+  }
+
+  .footer {
+    padding: 0 5px;
+    margin: 0 0 30px 0;
+  }
+
+}

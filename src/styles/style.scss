@@ -1,0 +1,78 @@
+@mixin formInput {
+  width: 257px;
+  height: 50px;
+  outline: none;
+  box-sizing: border-box;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+@mixin smallHeading {
+  font-weight: bolder;
+}
+
+@import "fonts";
+
+body {
+  margin: 0;
+  font-family: "Avenir-book", sans-serif;
+}
+  .logo-bar {
+    position: sticky;
+    top: 0;
+    background-color: white;
+    box-shadow: 0px 1px 0px #E1E7ED;
+    padding: 26px 15px 19px;
+    display: flex;
+    justify-content: space-between;
+    & .logo {
+      z-index: 999;
+      height: 30px;
+      width: 30px;
+    }
+    & .logo-bar-nav {
+      margin-right: 20px;
+      font-family: 'Avenir-Heavy';
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      & .logo-bar-image {
+        object-fit: cover;
+        height: 30px;
+        width: 30px;
+        border-radius: 50%;
+      }
+      & a {
+        text-decoration: none;
+        color: #3d4e61;
+        font-size: 20px;
+        padding-right: 40px;
+      }
+    }
+  }
+  .burger{
+    margin-right: 20px;
+    cursor: pointer;
+    z-index: 999;
+    display: none;
+   & div{
+   width: 25px;
+   height: 4px;
+   margin: 4px;
+   border-radius: 2px;
+   background-color: black;
+  }
+  }
+
+  .banner{
+     img{
+    width: 100%;
+    object-fit: cover;
+    height: 464px;
+     }
+  }
+
+@import "main";
+@import "footer";
+@import "media-quesry";
+

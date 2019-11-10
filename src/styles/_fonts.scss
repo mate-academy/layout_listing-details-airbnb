@@ -1,6 +1,15 @@
 @font-face {
-  font-family: "Roboto";
-  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
-  font-weight: normal;
-  font-style: normal;
+  font-family: "Avenir-Book";
+  src: local("Avenir Book"), local("Avenir-Book"),
+    url("../fonts/book/Avenir-Book.woff2") format("woff2"),
+    url("../fonts/book/Avenir-Book.woff") format("woff"),
+    url("../fonts/book/Avenir-Book.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Avenir-Heavy";
+  src: local("Avenir Heavy"), local("Avenir-Heavy"),
+    url("../fonts/heavy/Avenir-Heavy.woff2") format("woff2"),
+    url("../fonts/heavy/Avenir-Heavy.woff") format("woff"),
+    url("../fonts/heavy/Avenir-Heavy.ttf") format("truetype");
 }
