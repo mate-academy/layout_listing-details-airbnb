@@ -1,0 +1,61 @@
+.profile {
+  margin-top: 40px;
+
+   &__info {
+     display: flex;
+   }
+
+   &__fake-photo {
+     height: 50px;
+     width: 50px;
+     border-radius: 50%;
+     background: #C4C4C4;
+   }
+
+   &__name {
+     font-weight: 600;
+     margin: 0 21px;
+     font-size: 20px;
+   }
+
+   &__date {
+     font-size: 14px;
+     margin: 0 21px;
+   }
+ }
+
+ .hosted {
+   margin: 70px 0;
+
+   &__message {
+     margin: 0;
+   }
+
+   &__location {
+     margin-top: 5px;
+     font-size: 14px;
+     line-height: 16px;
+     color: #3D4E61;
+   }
+
+   &__text {
+     padding-bottom: 20px;
+   }
+
+   &__link {
+     margin-top: 15px;
+     padding: 15px 27px;
+     font-size: 16px;
+     color: #118488;
+     text-decoration: none;
+     border: 1px solid #118488;
+     box-sizing: border-box;
+     border-radius: 4px;
+
+     &:hover {
+       background-color: #118488;
+       color: #fff;
+       transition: 0.5s;
+     }
+   }
+ }
