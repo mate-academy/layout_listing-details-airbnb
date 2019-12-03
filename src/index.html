@@ -3,12 +3,128 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Title</title>
+    <title>Listing details for Airbnb</title>
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate Academy</h1>
-    <script type="text/javascript" src="scripts/main.js"></script>
+    <header class="header">
+      <div class="top">
+        <img class="top__logo" src="./images/top__logo.png" alt="persone">
+        <div class="top__nav">
+          <a class="top__item" href="">Become a host</a>
+          <a class="top__item" href="">Trips</a>
+          <a class="top__item" href="">Messages</a>
+          <img class="top__img persone__img" src="./images/top__img.jpg" alt="logo">
+        </div>
+      </div>
+    </header>
+    <main>
+        <aside class="form">
+            <p class="cost__night">25$ per night</p>
+            <form class="form__book" action="">
+              <label for=""><input class="input form__input" type="text" placeholder="Date"></label>
+              <label for=""><input class="input form__input" type="text" placeholder="Guests"></label>
+              <label for=""><button class="button form__button">Book</button></label>
+            </form>
+        </aside>
+      <section class="section">
+        <div class="apartment">
+          <h2 class="heading">Quiet apartment</h2>
+          <p class="entire__apartment">Entire apartment</p>
+          <div class="apartment__status"><span class="apartment-item">4 guests</span><span class="apartment-item">1 bed</span><span class="apartment-item">1 bath</span></div>
+          <div></div>
+          <p class="apartment__text">City Apartment is newly renovated in the heart of Budapest, right in<br> the city center. Lorem ipsum dolor sit amet, consectetur adipiscing<br> elit, sed do eiusmod tempor incididunt ut labore et dolore magna<br> aliqua. Ut enim ad minim veniam.</p>
+          <h5 class="contact">Contact host</h5>
+        </div>
+      </section>
+      <section class="section">
+          <div>
+        <div class="amenitis">
+          <div class="amenitis__item_1">
+            <h3>Amenities</h3>
+            <p>Elevator</p>
+            <p>Washer</p>
+          </div>
+          <div class="amenitis__item_2">
+            <p>Hair dryer</p>
+            <p>Kitchen</p>
+          </div>
+        </div>
+        <div class="ttt">
+          <label class="link" for="hider" id="clickme">Show All Amenities</label>
+          <input type="checkbox" id="hider">
+          <div class="content">
+            <div>
+              <p>Elevator &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hair dryer</p>
+              <p>Washer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kitchen</p>
+            </div>
+            <div>
+              <p>Elevator &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hair dryer</p>
+              <p>Washer &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Kitchen</p>
+            </div>
+          </div>
+        </div>
+        </div>
+      </section>
+      <!--  -->
+      <section  class="section">
+        <div class="reviews">
+          <h2>Reviews</h2>
+          <div class="profile">
+              <div class="profile__info">
+                  <div class="profile__fake-photo"></div>
+                  <div class="profile__text">
+                    <p class="profile__name">John</p>
+                    <p class="profile__date">September 2016</p>
+                  </div>
+              </div>
+            <div>
+              <p class="reviews__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br> do eiusmod tempor incididunt ut labore et dolore magna<br> aliqua. Ut enim ad minim veniam.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="profile">
+              <div class="profile__info">
+                  <div class="profile__fake-photo"></div>
+                  <div class="profile__text">
+                    <p class="profile__name">John</p>
+                    <p class="profile__date">September 2016</p>
+                  </div>
+              </div>
+            <div>
+              <p class="reviews__text">Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Ut enim ad minim veniam.</p>
+            </div>
+          </div>
+          <!--  -->
+          <div class="hosted">
+            <h2 class="hosted__message">Hosted by Jane</h2>
+            <P class="hosted__location">Budapest, Hungary</P>
+            <P class="hosted__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed<br> do eiusmod tempor incididunt ut labore et magna aliqua.</P>
+            <a class="hosted__link" href="/">Contact Host</a>
+          </div>
+        </div>
+      </section>
+      <!--  -->
+      <footer class="footer">
+        <div class="block">
+          <p>Airbnb</p>
+          <p>About</p>
+          <p>Press</p>
+          <p>Help</p>
+        </div>
+        <div class="block">
+          <p>Discover</p>
+          <p>Travel credit</p>
+          <p>Business</p>
+          <p>Guidebooks</p>
+        </div>
+        <div class="block">
+          <p>Hosting</p>
+          <p>Why host</p>
+          <p>Hospitality</p>
+          <p>Community</p>
+        </div>
+      </footer>
+    </main>
   </body>
 </html>

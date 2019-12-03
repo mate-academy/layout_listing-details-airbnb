@@ -1,0 +1,21 @@
+@media screen and (max-width: 800px) {
+  .section {
+    flex-direction: column;
+    margin: 0 20px;
+    align-items: center;
+  }
+
+  .form {
+    top: 20px;
+    position: relative;
+    left: 50px;
+  }
+
+  .apartment {
+    margin-top: 0;
+  }
+
+  .top__logo {
+    margin-left: 10px;
+  }
+}
