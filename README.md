@@ -30,4 +30,4 @@ Cursors` in figma. [Learn how](https://mate-academy.github.io/layout_task-guidel
 
 **Result**
 
-- [UPDATE DEMO LINK](https://<your_account>.github.io/<repo_name>/)
+- [DEMO LINK](https://vladyslav223.github.io/layout_listing-details-airbnb/)
