@@ -34,7 +34,9 @@
     "stylelint-config-recommended-scss": "^3.3.0",
     "stylelint-scss": "^3.17.2"
   },
-  "dependencies": {},
+  "dependencies": {
+    "@mate-academy/backstop-config": "^1.0.0"
+  },
   "mateAcademy": {
     "projectType": "layout"
   }
