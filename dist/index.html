@@ -2,12 +2,143 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Title</title>
     <link rel="stylesheet" href="./styles/main.css">
   </head>
   <body>
-    <img src="./images/logo.svg" alt="Logo">
-    <h1>Hello Mate academy</h1>
+    <header class="head">
+      <a href="#" class="head__logo"></a>
+      <nav class="head__menu">
+        <ul class="head__menu-container">
+          <li class="head__link">
+            <a href="">Become a host</a>
+          </li>
+          <li class="head__link">
+            <a href="">Trips</a>
+          </li>
+          <li class="head__link">
+            <a href="">Messages</a>
+          </li>
+        </ul>
+      <a class="head__link" href="#">
+        <img class="top__account" src="./images/ellipse.png" alt="quiet apartment">
+      </a>
+      </nav>
+    </header>
+    <main class="page">
+      <div class="page__wrap-img">
+      </div>
+      <div class="page__container">
+        <div class="page__container_card">
+          <h1 class="page__main-heading">Quiet apartment</h1>
+          <span class="page__main-heading-span">Entire apartment</span>
+          <ul class="page__characteristics">
+            <li>4 guests</li>
+            <li>1 bed</li>
+            <li>1 bath</li>
+          </ul>
+
+          <div class="page__text">
+            City Apartment is newly renovated in the heart of Budapest, right in the city center.
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+            Ut enim ad minim veniam.
+          </div>
+          <a href="" class="page__contact-h">Contact host</a>
+          <h3 class="ammenities__title">Amenities</h3>
+          <div class="amenities">
+            <span class="amenities__item">Elevator</span>
+            <span class="amenities__item">Hair dryer</span>
+            <span class="amenities__item">Washer</span>
+            <span class="amenities__item">Kitchen</span>
+          </div>
+          <a href="" class="amenities__show">Show all ammenities</a>
+          <div class="reviews">
+            <h3 class="reviews___heading" >Reviews</h3>
+            <section class="reviews__review">
+              <div class="reviews__review-person " >
+                <span class="reviews__review-person-img  girl-1"></span>
+                <div class="reviews__review-cont">
+                  <div class="reviews__review-person-name">Anastasia</div>
+                  <div class="reviews__review-person-date">September 2016</div>
+                </div>
+              </div>
+              <div class="reviews__review-text">
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                  Ut enim ad minim veniam.
+                </p>
+              </div>
+            </section>
+            <section class="reviews__review">
+                <div class="reviews__review-person" >
+                  <span class="reviews__review-person-img  girl-2"></span>
+                  <span class="reviews__review-cont">
+                    <div class="reviews__review-person-name">Gaga</div>
+                    <div class="reviews__review-person-date">September 2016</div>
+                  </span>
+                </div>
+                <div class="reviews__review-text">
+                    Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
+                </div>
+            </section>
+            </div>
+            <h2 class="who-hosted-heading" >Hosted by Jane</h2>
+            <div class="who-hosted-span">Budapest, Hungary</div>
+            <div class="who-hosted-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et magna aliqua.</div>
+            <a href="" class="who-hosted-contact" >Contact host</a>
+        </div>
+        <div class="form" method="GET">
+          <span class="form__price">25$ per night</span>
+          <form action="">
+            <input type="text" class="form__input form__input-date" name = "input-date" placeholder="Date">
+            <input type="text" class="form__input form__input-guests" name = "input-guests"  placeholder="Guests">
+            <a href="" class="form__input form__input-book">Book</a>
+          </form>
+        </div>
+      </div>
+    </main>
+    <footer class="bottom">
+      <ul class="section">
+        <span class="bottom__span">Airbnb</span>
+        <li>
+          <a class="bottom__link" href="#">About</a>
+        </li>
+        <li>
+          <a class="bottom__link" href="#">Press</a>
+        </li>
+        <li>
+          <a class="bottom__link" href="#">Help</a>
+        </li>
+      </ul>
+      </div>
+      <ul class="section">
+        <span class="bottom__span">Discover</span>
+        <li>
+          <a class="bottom__link" href="#">Travel credit</a>
+        </li>
+        <li>
+          <a class="bottom__link" href="#">Business</a>
+        </li>
+        <li>
+          <a class="bottom__link" href="#">Guidebooks</a>
+        </li>
+      </ul>
+      <ul class="section">
+        <span class="bottom__span">Hosting</span>
+        <li>
+          <a class="bottom__link" href="#">Why host</a>
+        </li>
+        <li>
+          <a class="bottom__link" href="#">Hospitlity</a>
+        </li>
+        <li>
+          <a class="bottom__link" href="#">Community</a>
+        </li>
+      </ul>
+    </footer>
     <script type="text/javascript" src="scripts/main.js"></script>
   </body>
 </html>
